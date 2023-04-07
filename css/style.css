@@ -1236,7 +1236,6 @@ border-radius: 10px;
     border: solid 1px white;
     overflow: hidden;
 }
-
 .grid-conocenos .wsp{
     display: flex;
     justify-content: flex-start;
@@ -1246,15 +1245,45 @@ border-radius: 10px;
 .cont-a-wsp{
    height: auto;
    width: 40%;
-   
 }
 .wsp a{
     padding: 0;
 }
 /* Finaliza cuarto articulo del grid-conocenos */
-
 /* Final del Grid de CONOCENOS */
 
+/* INICIO de Responsive a la pagina "CONTACTOS" en mobile */
+/* aplicando css al contenido de "Contacto" */
+.section-container-contactanos{
+    width: 100%;
+}
+.disposicion-contenidos{
+    width: 100%;
+}
+.conteiner-formularios{
+    display: flex;
+    justify-content: center;
+}
+.ancho{
+    width: 90%;
+}
+.d-h2{
+    width: 100%;
+}
+.d-h2 .indicacion-iframe{
+    width: 90%;
+}
+.d-h2 .indicacion-iframe .mb-w{
+    width: 20px;
+    height: auto;
+}
+.iframe-contactos{
+    width: 90%;
+}
+.find-us{
+    margin-bottom: 50px;
+}
+/* fin del Responsive a "Contactos en dispositivos mobiles" */
 }
 
 /* medias aplicadas al responsive a resoluciones de dispositivos como tablet o ipad */
@@ -1408,8 +1437,9 @@ border-radius: 10px;
     .producto-section2{
         width: 100%;
     }
-    /* FINALIZA  responsive en resoluciones Mobile a "PRODUCTOS" */
-   
+    /* FINALIZA  responsive en resoluciones medianas a "PRODUCTOS" */
+    
+    /* Comienza Responsive en resoluciones medianas a "CONOCENOS"*/
     .grid-conocenos{
         display: grid;
         padding: 0;
@@ -1427,6 +1457,7 @@ border-radius: 10px;
         margin-bottom: 35px;
     }
     /* aplicando css a nuestros contenidos en grid-concenos */
+    /* Primer articulo del grid */
     .desarrollo{
         width: 95%;
         height: 100%;
@@ -1443,6 +1474,7 @@ border-radius: 10px;
     .desarrollo .text-edit{
         width: 100%;
     }
+    /* segundo articulo del grid */
     .carousell{
         width: 100%;
         height: 100%;
@@ -1453,12 +1485,14 @@ border-radius: 10px;
     .container-carousell img{
         width: 100%;
     }
+    /* tercer articulo del grid */
     .multime{
         width: 97%;
     }
     .multime .container-video{
         width: 100%;
     }
+    /* cuarto articulo del div */
     .buton{
         display: flex;
         border: solid 2px black;
@@ -1485,9 +1519,7 @@ border-radius: 10px;
          justify-content: center;
          align-items: center;
          border: solid 1px white;
-         
     }
-     
      .grid-conocenos .wsp{
          display: flex;
          justify-content: flex-start;
@@ -1503,6 +1535,42 @@ border-radius: 10px;
      .wsp a{
          padding: 0;
      }
+     /* finalizado los articulos */
+     /* final del responsive a grid-conocenos en resoluciones medianas */
+
+    /* INICIO de Responsive a la pagina "CONTACTOS" en dispositivos mediano */
+    /* aplicando css al contenido de "Contacto" */
+    .section-container-contactanos{
+        width: 100%;
+    }
+    .disposicion-contenidos{
+        width: 100%;
+    }
+    .conteiner-formularios{
+        display: flex;
+        justify-content: center;
+    }
+    .ancho{
+        width: 90%;
+    }
+    .d-h2{
+        width: 100%;
+    }
+    .d-h2 .indicacion-iframe{
+        width: 90%;
+    }
+    .d-h2 .indicacion-iframe .mb-w{
+        width: 20px;
+        height: auto;
+    }
+    .iframe-contactos{
+        width: 90%;
+    }
+    .find-us{
+        margin-bottom: 50px;
+    }
+    /* fin del Responsive a "Contactos en dispositivos medianos" */
+     
 } 
 
 /* maximos y minimos de los media */
