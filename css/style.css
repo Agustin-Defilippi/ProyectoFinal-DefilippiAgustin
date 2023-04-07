@@ -362,7 +362,7 @@ background-color: black;
     text-decoration: none;
     display: inline-block;
     border: 2px solid black;
-    margin-top: 10vh;
+    padding: 5px ;
     color:white;
     background-color: black;
     border-radius: 8px;
@@ -387,7 +387,7 @@ background-color: black;
     width: 100%;
     gap: 10px;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
     row-gap: 100px;
     overflow: hidden;
 }
@@ -404,7 +404,6 @@ background-color: black;
 .grid-productos .incendio{
     grid-area: bombero;
 }
-
 
 /* aplicando css */
 .container-section-product{
@@ -560,13 +559,14 @@ background-color: black;
 .grid-conocenos{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 230px repeat(2,50vh);
+    grid-template-rows: 230px repeat(2,50vh) 300px;
     grid-template-areas: 
     "titulo titulo"
     "principal movimiento"
-    "principal video";
+    "principal video"
+    "boton boton";
     justify-content: center;
-    margin-bottom: 25px;
+    margin-bottom: 60px;
 }
 /* Declarando areas del Grid page "CONOCENOS" */
 .grid-conocenos .h1-conocenos{
@@ -581,6 +581,10 @@ background-color: black;
 .grid-conocenos .multime{
     grid-area: video;
 }
+.grid-conocenos .buton{
+    grid-area: boton;
+}
+
 /* Aplicando css a nuestro grid page "CONOCENOS" */
 
 /* Desarrollo = principal (imagen y texto) */
@@ -594,8 +598,6 @@ background-color: black;
     width: 65%;
     border: solid 2px black;
     overflow: hidden;
-    
-    
 }
 .desarrollo img{
     width:100%;
@@ -611,15 +613,7 @@ background-color: black;
     text-align: center;
     padding: 0 15px;
 }
-/* button */
-.wsp{
-    display: flex;
-    justify-content: center;
-    align-items:flex-end;
-    height: 35px;
-    margin-top: 50px;
-   
-}
+
 
 /* carousell conocenos= movimiento */
 .carousell{
@@ -656,6 +650,54 @@ background-color: black;
     display: flex;
     justify-content: center;
 }
+/* comienza article declarado en grid=buton*/
+.grid-conocenos .buton{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 20px;
+}
+.buton .wsp{
+    height: 40px;
+    width: 65%;
+    margin: 0;
+    display: flex;
+}
+.cont-a-wsp{
+    width: 40%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.img-buton{
+    height: 250px;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-buton .conocenos-p{
+   width: 60%;
+   font-size: 1.5em;
+   background-color: rgba(120, 224, 120);
+   padding: 0 15px;
+   border-radius: 15px;
+   text-align: center;
+}
+.container-img-cono{
+    width: 40%;
+    height: 100%;
+}
+.produ-img{
+    width: 100%;
+    height: 100%;
+    
+}
+/* termina article buton de "conocenos" */
+
 /* termina grid-"conocenos" */
 
 /* COMIENZA SECCION DE GRIDS DEL SITIO WEB */
@@ -982,7 +1024,6 @@ border-radius: 10px;
         box-sizing: border-box;
         overflow: hidden;
         grid-template-columns: 1fr;
-        grid-template-rows: 4,40vh;
         grid-template-areas: 
         "liquido"
         "gases"
@@ -991,19 +1032,7 @@ border-radius: 10px;
         width: 100%;
         gap: 20vh;
     }
-    /* declarando grid-areas */
-    .grid-productos .agua{
-        grid-area: liquido;
-    }
-    .grid-productos .gas{
-        grid-area: gases;
-    }
-    .grid-productos .cloaca{
-        grid-area: desechos;
-    }
-    .grid-productos .incendio{
-        grid-area: bombero;
-    }
+ 
     
     /* APLICANDO MQ a los elementos de mi GRID */
 
@@ -1016,7 +1045,7 @@ border-radius: 10px;
    /* articulo "agua" */
     .grid-productos .agua{
         width: 100%;
-        height: 80vh;
+        
         display: flex;
         justify-content: center;
         border: solid 2px white;
@@ -1024,7 +1053,6 @@ border-radius: 10px;
     /* articulo "gas" */
     .grid-productos .gas{
         width: 100%;
-        height: 80vh;
         display: flex;
         justify-content: center;
         border: solid 2px white;
@@ -1032,7 +1060,6 @@ border-radius: 10px;
     /* articulo "cloaca" */
     .grid-productos .cloaca{
         width: 100%;
-        height: 80vh;
         display: flex;
         justify-content: center;
         border: solid 2px white;
@@ -1040,7 +1067,6 @@ border-radius: 10px;
     /* articulo "incendio" */
     .grid-productos .incendio{
         width: 100%;
-        height: 80vh;
         display: flex;
         justify-content: center;
         border: solid 2px white;
@@ -1061,9 +1087,9 @@ border-radius: 10px;
         border-radius: 15px;
         padding: 0 15px;
     }
-    .cont-mq{
+    /* .cont-mq{
         width: 70%;
-    }
+    } */
     /* tamaño de fuente para los textos del grid */
     .grid-text{
         font-size: 1em;
@@ -1103,26 +1129,13 @@ border-radius: 10px;
     "titulo"
     "principal"
     "movimiento"
-    "video";
+    "video"
+    "boton";
     width: 100%;
-    row-gap: 150px;
-    
-    
+    row-gap: 130px;
+    margin-bottom: 30px;
 }
 
-/* Declarando areas del Grid page "CONOCENOS" */
-.grid-conocenos .h1-conocenos{
-    grid-area: titulo;
-}
-.grid-conocenos .desarrollo{
-    grid-area: principal;
-}
-.grid-conocenos .carousell{
-    grid-area: movimiento;
-}
-.grid-conocenos .multime{
-    grid-area: video;
-}
 
 /* Aplicando css a nuestro Grid-conocenos */
 .cont-h1{
@@ -1134,8 +1147,6 @@ border-radius: 10px;
     display:flex;
     justify-content: center;
     width: 100%;
-    height: 60vh;
-  /*   margin-top: 50px; */
 }
 .desarrollo .text-edit{
     width: 80%;
@@ -1144,20 +1155,16 @@ border-radius: 10px;
 }
 .desarrollo .d-flex-desarrollo .container-p{
     max-width: 100%;
-   
 }
 .desarrollo .d-flex-desarrollo .container-p p{
     font-size: 1.5em;
     line-height: 1.5em;
     padding: 0 20px;
 }
-.wsp{
-    height: 50px;
-}
+
 .d-flex-desarrollo{
     display: block;
     width: 100%;
-    height: 100%;
     background-color: wheat;
 }
 
@@ -1166,34 +1173,31 @@ border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-   /*  background-color: aqua; */
     width: 100%;
-    height: 100%;
     border-radius: 20px;
-   /*  margin: 210px 0; */
 }
 .container-carousell{
     border-radius: 20px;
     margin-right: 7px;
     width: 80%;
-    height: 60%;
+    height: 100%;
 }
 .container-carousell img{
     border-radius: 20px;
+    height: 100%;
 }
 
 /* Tercer articulo del Grid */
 .multime{
     width: 100%;
-    height: 50vh;
+    
     display: flex;
     justify-content: center;
-    margin-bottom: 130px;
+   /*  margin-bottom: 130px; */
 }
 .multime .container-video{
     width: 90%;
     height: 100%;
-    
     border-radius: 20px;
     margin-right: 7px;
     margin-bottom: 100px;
@@ -1203,7 +1207,54 @@ border-radius: 10px;
     height: 100%;
     border-radius: 20px;
 }
+
+/* Cuarto article del Grid "BUTON" */
+.buton{
+   display: flex;
+   border: solid 2px black;
+}
+.img-buton{
+    width: 90%;
+    display: flex;
+}
+.produ-img{
+    width: 100%;
+    height: 100%;
+}
+.container-img-cono{
+    width: 40%;
+}
+.img-buton .conocenos-p{
+    padding: 0 20px;
+    width: 60%;
+    font-size: 0.9em;
+    max-width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px white;
+    overflow: hidden;
+}
+
+.grid-conocenos .wsp{
+    display: flex;
+    justify-content: flex-start;
+    width: 90%;
+    height: auto;
+}
+.cont-a-wsp{
+   height: auto;
+   width: 40%;
+   
+}
+.wsp a{
+    padding: 0;
+}
+/* Finaliza cuarto articulo del grid-conocenos */
+
 /* Final del Grid de CONOCENOS */
+
 }
 
 /* medias aplicadas al responsive a resoluciones de dispositivos como tablet o ipad */
@@ -1287,27 +1338,13 @@ border-radius: 10px;
         box-sizing: border-box;
         overflow: hidden;
         grid-template-columns: repeat(2,1fr);
-        grid-template-rows: 2,20vh;
         grid-template-areas: 
         "liquido gases"
         "desechos bombero";
         width: 100%;
         row-gap: 10vh;
     }
-
-    /* declarando grid-areas */
-    .grid-productos .agua{
-        grid-area: liquido;
-    }
-    .grid-productos .gas{
-        grid-area: gases;
-    }
-    .grid-productos .cloaca{
-        grid-area: desechos;
-    }
-    .grid-productos .incendio{
-        grid-area: bombero;
-    }
+    
     /* mq h1 productos */
     .presentacion{
         font-size: 2.8em;
@@ -1316,28 +1353,28 @@ border-radius: 10px;
     /* articulo "Agua" contenido en grid-productos */
     .grid-productos .agua{
        width: 100%;
-       height: 85vh;
+       /* height: 85vh; */
        margin-top: 20px;
        background-color: wheat;
     }
     /* articulo "gas" contenido en grid-productos */
     .grid-productos .gas{
         width: 100%;
-        height: 85vh;
+        /* height: 85vh; */
        margin-top: 20px;
        background-color: wheat;
     }
     /* articulo "cloaca" contenido en grid-productos */
     .grid-productos .cloaca{
         width: 100%;
-        height: 85vh;
+        /* height: 85vh; */
         margin-top: 150px;
         background-color: wheat;
     }
     /* articulo "incendio" contenido en grid-productos */
     .grid-productos .incendio{
         width: 100%;
-        height: 85vh;
+        /* height: 85vh; */
         margin-top: 150px;
         background-color: wheat;
     }
@@ -1383,26 +1420,13 @@ border-radius: 10px;
         grid-template-areas: 
         "titulo titulo"
         "principal movimiento"
-        "principal video";
+        "principal video"
+        "boton boton";
         width: 100%;
         row-gap: 5vh;
         margin-bottom: 35px;
     }
-
-    /* Declarando areas del Grid page "CONOCENOS" */
-    .grid-conocenos .h1-conocenos{
-        grid-area: titulo;
-    }
-    .grid-conocenos .desarrollo{
-        grid-area: principal;
-    }
-    .grid-conocenos .carousell{
-        grid-area: movimiento;
-    }
-    .grid-conocenos .multime{
-        grid-area: video;
-    }
-
+    /* aplicando css a nuestros contenidos en grid-concenos */
     .desarrollo{
         width: 95%;
         height: 100%;
@@ -1435,6 +1459,50 @@ border-radius: 10px;
     .multime .container-video{
         width: 100%;
     }
+    .buton{
+        display: flex;
+        border: solid 2px black;
+    }
+    .img-buton{
+         width: 90%;
+         height: 80%;
+         display: flex;
+    }
+    .produ-img{
+         width: 100%;
+         height: 100%;
+    }
+    .container-img-cono{
+         width: 40%;
+    }
+    .img-buton .conocenos-p{
+         padding: 0 20px;
+         width: 60%;
+         font-size: 0.9em;
+         max-width: 100%;
+         height: 80%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         border: solid 1px white;
+         
+    }
+     
+     .grid-conocenos .wsp{
+         display: flex;
+         justify-content: flex-start;
+         width: 90%;
+         height: 20%;
+     }
+     .cont-a-wsp{
+        height: auto;
+        width: 40%;
+        height: 100%;
+        
+     }
+     .wsp a{
+         padding: 0;
+     }
 } 
 
 /* maximos y minimos de los media */
@@ -1511,6 +1579,5 @@ border-radius: 10px;
     .flex-conteiner-multimedia .wrap-svg-1{
         margin-right: 10px;
     }
-   
 }
 
