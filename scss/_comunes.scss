@@ -1,0 +1,40 @@
+//selector universal "Reset"
+*{
+    font-family: $fontPrimary;
+    font-weight: $fontWprimary;
+    box-sizing: border-box;
+}
+
+//clase para texto fijo arriba del navegador
+.bg-wheat{
+    background-color: $colorTerciario;
+}
+
+
+//HEADER acomodo con Sass
+header{
+    .container-flex-carousel{
+        @include flex (row,nowrap,center,center);
+        width: $ancho-w;
+        height: 100%;
+        margin-top: 20px;
+    }
+    .w-65{
+        width: 65%;
+    }
+}
+
+//h1 y h2
+h1{
+    @include text (3em,2.5em,$colorSecundario,center);
+    font-family: $fontPrimary;
+    font-weight: $fontWprimary;
+}
+.cont-h1{
+    @include d-flex (row,center);
+    width: $ancho-w;
+    .box-h1{
+        
+    }
+
+}

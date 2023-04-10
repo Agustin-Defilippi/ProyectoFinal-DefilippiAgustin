@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2? family= Oswald:wght@400;500 & family= Roboto & display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Saira:wght@300;400;500&display=swap");
+* {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  box-sizing: border-box;
+}
+
+.bg-wheat {
+  background-color: wheat;
+}
+
+header .container-flex-carousel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+}
+header .w-65 {
+  width: 65%;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 2.5em;
+  color: white;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+}
+
+.cont-h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+.navegador {
+  background-color: black;
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+.navegador img {
+  width: 25%;
+  height: auto;
+  display: flex;
+}
+.navegador ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+}
+.navegador ul li a {
+  color: white;
+}
+.navegador ul li a:hover {
+  background-color: white;
+  color: black;
+  text-decoration: underline;
+}
+.navegador .bg-form {
+  background-color: white;
+  border-radius: 5px;
+}
+.navegador .edit-button {
+  background-color: white;
+  color: black;
+  border: solid 1px black;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,56 @@
+//comienza acomodo de NAV con nesting/anidacion Sass
+.navegador{
+    background-color: $colorPrincipal;
+    display: flex;
+    width: $ancho-w;
+    height: auto;
+    img{
+        width: 25%;
+        height: auto;
+        display: flex;
+    }
+    ul{
+        @include flex (row,nowrap,space-around,center);
+        width: 80%;
+        li{
+            a{
+                color: $colorSecundario;
+                &:hover{
+                    background-color:$colorSecundario;
+                    color: $colorPrincipal;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    //buscador del sitio-web
+    .bg-form{
+        background-color: $colorSecundario;
+        border-radius: 5px;
+    }
+    .edit-button{
+        background-color: $colorSecundario;
+        color: $colorPrincipal;
+        border: solid 1px black;
+        border-radius: 5px;
+    }
+    
+}
+//fin de acomodo de nav aplicando metodo nesting de Sass
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

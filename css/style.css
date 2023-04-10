@@ -12,11 +12,10 @@
 /* comienza cuerpo */
 body{
     background-color: white;
-    
 }
 
 /* empieza el navegador */
- .navegador{
+.navegador{
     background-color: black;
     display: flex;
     width: 100%;

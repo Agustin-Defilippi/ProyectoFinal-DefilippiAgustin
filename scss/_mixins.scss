@@ -1,0 +1,33 @@
+//Minxis 
+@mixin flex ($direct,$wrap,$justy,$align){
+    display: flex;
+    flex-direction: $direct;//de $direct hasta $align son variables locales
+    flex-wrap: $wrap;
+    justify-content: $justy;
+    align-items: $align;                                                            
+}
+
+//segundo mixin
+@mixin d-flex ($direct,$justy){
+    display: flex;
+    flex-direction: $direct;
+    justify-content: $justy;
+}
+
+//tercer mixin
+@mixin text ($tamano,$interline,$color,$text){
+    //variables locales
+    font-size: $tamano;
+    line-height: $interline;
+    color: $color;
+    text-align: $text;
+}
+
+//cuarto mixin
+@mixin containers ($width,$alto,$margin,$border,$circulo){
+    width: $width;
+    height: $alto;
+    margin: $margin;
+    border: $border;
+    border-radius: $circulo;
+}
