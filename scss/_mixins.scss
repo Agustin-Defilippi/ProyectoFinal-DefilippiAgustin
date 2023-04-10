@@ -1,17 +1,19 @@
-//Minxis 
+//Minxis
+
+//primer mixin
 @mixin flex ($direct,$wrap,$justy,$align){
     display: flex;
-    flex-direction: $direct;//de $direct hasta $align son variables locales
-    flex-wrap: $wrap;
-    justify-content: $justy;
-    align-items: $align;                                                            
+    flex-direction: $direct;//variable local
+    flex-wrap: $wrap;//variable local
+    justify-content: $justy;//variable local
+    align-items: $align;//variable local                                                            
 }
 
 //segundo mixin
 @mixin d-flex ($direct,$justy){
     display: flex;
-    flex-direction: $direct;
-    justify-content: $justy;
+    flex-direction: $direct;//variable local
+    justify-content: $justy;//variable local
 }
 
 //tercer mixin
@@ -24,10 +26,44 @@
 }
 
 //cuarto mixin
+@mixin text2($tamano,$interline){
+    font-size: $tamano;
+    line-height: $interline;
+}
+
+//quinto mixin
 @mixin containers ($width,$alto,$margin,$border,$circulo){
-    width: $width;
-    height: $alto;
-    margin: $margin;
+    width: $width;//variable local
+    height: $alto;//variable local
+    margin: $margin;//variable local
+    border: $border;//variable local
+    border-radius: $circulo;//variable local
+}
+//sexto mixin
+@mixin containers-dos ($border,$circulo,$bg-color){
     border: $border;
     border-radius: $circulo;
+    background-color: $bg-color;
+}
+
+//octavo mixin
+@mixin grid ($margin,$gt-c,$gap,$width){
+    display: grid;
+    grid-template-columns: $gt-c;//variable local
+    margin-bottom: $margin;//variable local
+    gap: $gap;//variable local
+    width: $width;//variable local
+}
+
+
+
+
+//Extend
+
+//primer extend aplicado en (grid-index)
+.img-extend{
+    width: 100%;
+    height: auto;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }

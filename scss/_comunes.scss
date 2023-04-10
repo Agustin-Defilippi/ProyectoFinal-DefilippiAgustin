@@ -24,17 +24,78 @@ header{
     }
 }
 
-//h1 y h2
-h1{
-    @include text (3em,2.5em,$colorSecundario,center);
-    font-family: $fontPrimary;
-    font-weight: $fontWprimary;
-}
+//h1
 .cont-h1{
     @include d-flex (row,center);
     width: $ancho-w;
     .box-h1{
-        
+        @include d-flex (row,center);
+        width: 65%;
+        margin: 30px;
+        border-radius: 20px;
+        background-color: $colorPrincipal;
+        h1{
+            @include text (3em,2.5em,$colorSecundario,center);
+            font-family: $fontPrimary;
+            font-weight: $fontWprimary;
+        }
     }
+}
 
+//h2
+h2{
+    font-family: 'Saira', sans-serif;
+    font-weight: $fontWsecundary;
+}
+
+//Textos (fuentes y pseudoclase "hover")
+.text-edit{
+    @include text ($size,1.9em,$colorPrincipal,center);
+    p:hover{
+        background-color: $colorPrincipal;
+        color: $colorSecundario;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+
+//Section Multimedia despues del Main de todas las apges
+.flex-conteiner-multimedia{
+    width: $ancho-w;
+    height: 100px;
+    display: flex;
+    .w-section{
+        @include d-flex (row,center);
+        width: $ancho-w;
+        color: $colorSecundario;
+        .w-65{
+            width: 65%;
+            @include containers-dos (0,20px,$colorPrincipal);
+            @include flex (row,nowrap,space-between,center);
+            .d-flex-1{
+                width: 32%;
+                @include flex (row,nowrap,space-between,center);
+                .wrap-svg-1{
+                    svg{
+                        .margin-svg1{
+                            margin-left: 15px;
+                        }
+                    }
+                }
+                
+            }
+            .d-flex-2{
+                width: 32%;
+                @include flex (row,nowrap,center,center);
+            }
+            .tamano-multimedia{
+                width: 3vw;
+                height: auto;
+                border: 1px solid white;
+                border-radius: 20px;
+                color: black;
+                background-color: white;
+            }
+        }   
+    }
 }

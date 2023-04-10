@@ -1,0 +1,79 @@
+//Contenido principal de toda las pages
+
+//comienza Main-Grid de "INDEX" aplicando nesting
+.grid-index{
+    @include grid (25px,repeat(6,15vw),30px,100%);
+    justify-content: center;
+    grid-template-areas: 
+    "filtres h1 h1 canillas canillas"
+    "filtres inodoro inodoro canillas canillas"
+    "filtres inodoro inodoro pisos pisos"
+    "filtres plomero plomero pisos pisos";
+    
+    .presentacion{
+        grid-area: h1;
+        @include text (2.1em,2.8em,$colorSecundario,center);
+        @include containers-dos (0px,10px,$colorPrincipal);
+        margin-top:20px;
+    }
+    .sanitarios{
+        grid-area: inodoro;
+        img{
+            @extend .img-extend;
+        }
+       
+    }
+    .griferias{
+        grid-area: canillas;
+        img{
+            @extend .img-extend;
+        }
+    }
+    .revestimientos{
+        grid-area: pisos;
+        overflow: hidden;
+        img{
+            @extend .img-extend;
+        }
+    }
+    .instalaciones{
+        grid-area: plomero;
+         img{
+            @extend .img-extend;
+        }
+    }
+    .filtros{
+        grid-area: filtres;
+        display: flex;
+        flex-direction: column;
+        form{
+            @include flex (column,nowrap,center,center);
+            @include containers-dos ($colorTerciario solid 1px,20px,$colorPrincipal);
+            margin-top: 25vh;
+            .edit-conteiner-filtros{
+                @include containers-dos ($colorSecundario solid 2px,10px,$colorTerciario);
+                margin: 10px 0;
+                .categories{
+                    margin-bottom: 25px;
+                    color: $colorSecundario;
+                    background-color: $colorPrincipal;
+                    font-size: $size;
+                }
+            }
+        }
+        ul{
+            li{
+                list-style: none;
+                a{
+                    @include text2(0.9em,2em);
+                    text-decoration: none;
+                    color:rgb(104, 104, 233);
+                    &:hover{
+                        color: $colorSecundario;
+                        background-color: $colorPrincipal;
+                    }
+                }
+            }
+        }
+    }
+}
