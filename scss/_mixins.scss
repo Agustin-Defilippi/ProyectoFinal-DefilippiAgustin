@@ -55,6 +55,11 @@
     width: $width;//variable local
 }
 
+//noveno mixin
+@mixin coloreado ($bg-c,$color){
+    background-color: $bg-c;//variable local
+    color: $color;//variable local
+}
 
 
 

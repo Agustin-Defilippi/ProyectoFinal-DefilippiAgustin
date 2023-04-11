@@ -59,43 +59,102 @@ h2{
     }
 }
 
-//Section Multimedia despues del Main de todas las apges
+//Section Multimedia despues del Main de todas las pages (COMIENZA)
 .flex-conteiner-multimedia{
     width: $ancho-w;
     height: 100px;
     display: flex;
     .w-section{
-        @include d-flex (row,center);
+        @include  d-flex (row,center);
         width: $ancho-w;
         color: $colorSecundario;
         .w-65{
             width: 65%;
-            @include containers-dos (0,20px,$colorPrincipal);
             @include flex (row,nowrap,space-between,center);
+            @include containers-dos (0,20px,$colorPrincipal);
             .d-flex-1{
                 width: 32%;
                 @include flex (row,nowrap,space-between,center);
                 .wrap-svg-1{
                     svg{
-                        .margin-svg1{
-                            margin-left: 15px;
-                        }
+                        @include containers (60px,60px,0,0,10px);
+                        @include coloreado ($colorSecundario,$colorPrincipal);
+                        margin-left: 15px;
                     }
-                }
-                
+                }        
             }
             .d-flex-2{
                 width: 32%;
                 @include flex (row,nowrap,center,center);
+                .flex-wrap-2{
+                    svg{
+                        margin-right: 10px;
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
             }
-            .tamano-multimedia{
-                width: 3vw;
-                height: auto;
-                border: 1px solid white;
-                border-radius: 20px;
-                color: black;
-                background-color: white;
+            .flex-wrap-2-w{
+                .edit-p{
+                    @include text (0.8em,1.5em,$colorTerciario,center);
+                } 
             }
-        }   
+        }
     }
 }
+
+//Comienza pie de "pagina-Footer"
+footer{
+    @include d-flex (row,space-between);
+    background-color: $colorPrincipal;
+    margin-top: 20px;
+    width: $ancho-w;
+    
+    .multimedia-redes{
+        width: 50px;
+        margin: 5px 5px;
+        border-radius: 10px;
+    }
+    .svg-fb{
+        color: blue;
+        padding: 8px 8px;
+        &:hover{
+            color: $colorSecundario;
+        }
+    }
+    .svg-insta{
+        color:violet;
+        padding: 8px 8px;
+        &:hover{
+            color: $colorSecundario;
+        }
+    }
+    .svg-twitter{
+        padding: 8px 8px;
+        &:hover{
+            color: $colorSecundario;
+        }
+    }
+    .css-text{
+        @include text (1.5em,1.7em,$colorSecundario,right);
+       
+    }
+}
+
+//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
