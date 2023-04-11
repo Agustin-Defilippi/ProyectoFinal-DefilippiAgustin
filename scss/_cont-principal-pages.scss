@@ -77,3 +77,74 @@
         }
     }
 }
+
+//comienza Main-Grid de "PRODUCTOS" aplicando nesting
+.grid-productos{
+    @include grid (100px,18vw 27vw 18vw,10px,$ancho-w);
+    justify-content: center;
+    row-gap: 100px;
+    grid-template-areas:
+    "liquido desechos gases"
+    "liquido desechos gases"
+    "liquido bombero gases";
+    
+
+    /* Declarando los grid-area */
+    .agua{
+        grid-area: liquido;
+        .container-section-product{
+            width: $ancho-w;
+            h2{ 
+                @extend .gd-prod-h2;
+            }
+        }
+        @extend .articles-prod;
+        img{
+           @extend .img-extend-productos;
+        }
+
+    }
+    .gas{
+        grid-area: gases;
+        .container-section-product{
+            width: $ancho-w;
+            h2{ 
+                @extend .gd-prod-h2;
+            }
+        }
+        @extend .articles-prod;
+        img{
+            @extend .img-extend-productos;
+        }
+    }
+    .cloaca{
+        grid-area: desechos;
+        .container-section-product{
+            width: $ancho-w;
+            h2{ 
+                @extend .gd-prod-h2;
+            }
+        }
+        @extend .articles-prod;
+        img{
+            @extend .img-extend-productos;
+        }
+        overflow: hidden;
+    }
+    .incendio{
+        grid-area: bombero;
+        .container-section-product{
+            width: $ancho-w;
+            h2{ 
+                @extend .gd-prod-h2;
+            }
+        }
+        @extend .articles-prod;
+        img{
+            @extend .img-extend-productos;
+        }
+    }
+
+}
+
+

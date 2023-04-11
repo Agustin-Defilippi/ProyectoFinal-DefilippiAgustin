@@ -314,7 +314,7 @@ background-color: black;
 /* Propiedas hover aplicadas a las imagenes del grid pagina principal index */
 .contenedor figure{
     margin-top: 20px;
-   position:relative;
+    position:relative;
     height: 45%;
     cursor: pointer;
     width: 100%;
@@ -336,7 +336,7 @@ background-color: black;
     transition: all 400ms ease-out;
     opacity: 0;
     visibility: hidden;
-   text-align: center;
+    text-align: center;
 }
 .contenedor figure:hover > .capa {
     opacity: 1;
