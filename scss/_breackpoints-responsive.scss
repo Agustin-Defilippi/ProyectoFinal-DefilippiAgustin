@@ -1,0 +1,455 @@
+@media(min-width:290px) and (max-width:767px){
+    .grid-index{
+        display: grid;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+        grid-template-columns: 1fr;
+        grid-template-rows: 5,20vh;
+        grid-template-areas: 
+        "filtres"
+        "h1"
+        "inodoro"
+        "canillas"
+        "pisos"
+        "plomero";
+        width: 100%;
+
+        .filtros{
+            display: none;
+        }
+        .presentacion{
+            height: 20vh;
+            font-size: 1.6em;
+            line-height: 2.5em;
+        }
+        .sanitarios{
+            width: 100vw;
+            img{
+                width: 100vw;
+            }
+        }
+        .griferias{
+            width: 100vw;
+            img{
+                width: 100vw;
+            }
+        }
+        .revestimientos{
+            width: 100vw;
+            img{
+                width: 100vw;
+            }
+        }
+        .instalaciones{
+            width: 100vw;
+            img{
+                width: 100vw;
+            }
+        }
+    }
+    
+    
+    
+   
+    
+    
+ 
+    
+    
+    .text-edit{
+        overflow: hidden;
+        text-align: center;
+        font-size: 0.80em;
+    }
+
+    /* responsive aplicado a clase w-65 del carousel */
+    .w-65{
+        width: 100vw;
+    }
+
+    /* responsive MOBILE de la pagina web "OFERTAS" */
+    .col-sm-12 .media{
+        width: 300px;
+        height: 55vh;
+    }
+    .section .row .w-65{
+        width: 100%;
+        height: 260%;
+    }
+    .box-h1{
+        width: 100vw;
+        display: flex;
+    }
+    .container-fluid h1{
+        font-size: 2.3em;
+        display: flex;
+    }
+    .card p{
+        font-size: 1em;
+    }
+
+    /* aplicando responsive a las seccion multimedia fuera del main  */
+    .flex-conteiner-multimedia{
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+        .w-section{
+            width: 100%;
+            .w-65{
+                width: 100%;
+                background-color: black;
+                display: flex;
+                flex-wrap: wrap;
+                .d-flex-1{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    .wrap-svg-1{
+                        width: 100vw;
+                        display: flex;
+                        margin: 10px 10px;
+                        justify-content: center;
+                    }
+                    .wrap-svg-2{
+                        display: flex;
+                        justify-content: center;
+                        width: 100vw;
+                        margin-top: 18px;
+                        .edit-audio{
+                            width: 80%;
+                        }
+                    }
+                }
+                .flex-w{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+                .d-flex-2{
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    .flex-wrap-2{
+                        width: 100vw;
+                        display: flex;
+                        justify-content: center;
+                        margin-bottom: 20px;
+                    }
+                    .flex-wrap-2-w{
+                        width: 100vw;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    
+  
+   
+    
+    .dis-audio{
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    
+    
+    .flex-conteiner-multimedia .tamano-multimedia{
+        width: 20vw;
+    }
+    
+    
+    /* responsive aplicado al footer */
+    footer{
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .container-wrap{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    .container-wrap p{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    /* responsive al navegador */
+    nav ul{
+        display:flex;
+        flex-direction: column  !important;
+    }
+
+    /* Responsive al grid-productos */
+    .grid-productos{
+        display: grid;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "liquido"
+        "gases"
+        "desechos"
+        "bombero";
+        width: 100%;
+        gap: 20vh;
+    }
+ 
+    
+    /* APLICANDO MQ a los elementos de mi GRID */
+
+    .grid-productos h2{
+        font-size: 2.2em;
+        color: white;
+    }
+   /* MEDIA Q para los diferentes articulos del grid */
+
+   /* articulo "agua" */
+    .grid-productos .agua{
+        width: 100%;
+        
+        display: flex;
+        justify-content: center;
+        border: solid 2px white;
+    }
+    /* articulo "gas" */
+    .grid-productos .gas{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border: solid 2px white;
+    }
+    /* articulo "cloaca" */
+    .grid-productos .cloaca{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border: solid 2px white;
+    }
+    /* articulo "incendio" */
+    .grid-productos .incendio{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border: solid 2px white;
+    }
+    /* imagen "incendio" */
+    .grid-productos .incendio img{
+        height: 70%;
+        width: 100%;
+    }
+    /* texto desoculto en mobile-tablet */
+    .incendio .container-section-product p{
+        display: block;
+    }
+    /* MEDIA Q para contenedor de los contenidos de los articulos */
+    .container-section-product{
+        border: solid 2px black;
+        background-color: wheat;
+        border-radius: 15px;
+        padding: 0 15px;
+    }
+    /* .cont-mq{
+        width: 70%;
+    } */
+    /* tamaño de fuente para los textos del grid */
+    .grid-text{
+        font-size: 1em;
+    }
+    
+    /* comienza la segunda seccion del main de productos */
+    .container-section2{
+        width: 100%;
+        margin: 100px 0;
+    }
+    .cont-section2{
+        width: 100%;
+    }
+    .agrupacion{
+        width: 100%;
+        border: solid white 2px;
+    }
+    .t-img{
+        width: 190px;
+        height: 150px;
+    }
+    .t-img2{
+        width: 100px;
+        height: 100px;
+    }
+    /* comienza la segunda seccion del main de productos */
+    /* FINALIZA  responsive en resoluciones Mobile a "PRODUCTOS" */
+/* RESPONSIVE grid-conocenos */
+.grid-conocenos{
+    display: grid;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "titulo"
+    "principal"
+    "movimiento"
+    "video"
+    "boton";
+    width: 100%;
+    row-gap: 130px;
+    margin-bottom: 30px;
+}
+
+
+/* Aplicando css a nuestro Grid-conocenos */
+.cont-h1{
+    margin-top: 20px;
+    height: 35vh;
+}
+/* Primer articulo del grid */
+.desarrollo{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+}
+.desarrollo .text-edit{
+    width: 80%;
+    border: solid 2px white;
+    border-radius: 20px;
+}
+.desarrollo .d-flex-desarrollo .container-p{
+    max-width: 100%;
+}
+.desarrollo .d-flex-desarrollo .container-p p{
+    font-size: 1.5em;
+    line-height: 1.5em;
+    padding: 0 20px;
+}
+
+.d-flex-desarrollo{
+    display: block;
+    width: 100%;
+    background-color: wheat;
+}
+
+/* Segundo articulo del Grid */
+.carousell{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    border-radius: 20px;
+}
+.container-carousell{
+    border-radius: 20px;
+    margin-right: 7px;
+    width: 80%;
+    height: 100%;
+}
+.container-carousell img{
+    border-radius: 20px;
+    height: 100%;
+}
+
+/* Tercer articulo del Grid */
+.multime{
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+   /*  margin-bottom: 130px; */
+}
+.multime .container-video{
+    width: 90%;
+    height: 100%;
+    border-radius: 20px;
+    margin-right: 7px;
+    margin-bottom: 100px;
+}
+.multime .container-video .iframe-video{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/* Cuarto article del Grid "BUTON" */
+.buton{
+   display: flex;
+   border: solid 2px black;
+}
+.img-buton{
+    width: 90%;
+    display: flex;
+}
+.produ-img{
+    width: 100%;
+    height: 100%;
+}
+.container-img-cono{
+    width: 40%;
+}
+.img-buton .conocenos-p{
+    padding: 0 20px;
+    width: 60%;
+    font-size: 0.9em;
+    max-width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px white;
+    overflow: hidden;
+}
+.grid-conocenos .wsp{
+    display: flex;
+    justify-content: flex-start;
+    width: 90%;
+    height: auto;
+}
+.cont-a-wsp{
+   height: auto;
+   width: 40%;
+}
+.wsp a{
+    padding: 0;
+}
+/* Finaliza cuarto articulo del grid-conocenos */
+/* Final del Grid de CONOCENOS */
+
+/* INICIO de Responsive a la pagina "CONTACTOS" en mobile */
+/* aplicando css al contenido de "Contacto" */
+.section-container-contactanos{
+    width: 100%;
+}
+.disposicion-contenidos{
+    width: 100%;
+}
+.conteiner-formularios{
+    display: flex;
+    justify-content: center;
+}
+.ancho{
+    width: 90%;
+}
+.d-h2{
+    width: 100%;
+}
+.d-h2 .indicacion-iframe{
+    width: 90%;
+}
+.d-h2 .indicacion-iframe .mb-w{
+    width: 20px;
+    height: auto;
+}
+.iframe-contactos{
+    width: 90%;
+}
+.find-us{
+    margin-bottom: 50px;
+}
+/* fin del Responsive a "Contactos en dispositivos mobiles" */
+}

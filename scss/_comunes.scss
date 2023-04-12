@@ -21,6 +21,12 @@ header{
     }
     .w-65{
         width: 65%;
+       
+    }
+    @media(min-width:290px) and (max-width:767px){
+        .w-65{
+            width: 100vw;
+        }
     }
 }
 
@@ -36,7 +42,7 @@ header{
         background-color: $colorPrincipal;
         h1{
             @include text (3em,2.5em,$colorSecundario,center);
-            font-family: $fontPrimary;
+            font-family: $fontSecundary;
             font-weight: $fontWprimary;
         }
     }

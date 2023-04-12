@@ -17,6 +17,13 @@
 }
 
 //tercer mixin
+@mixin acomodo-cont ($justy,$aling){
+    display: flex;
+    justify-content: $justy;
+    align-items: $aling;
+}
+
+//cuarto mixin
 @mixin text ($tamano,$interline,$color,$text){
     //variables locales
     font-size: $tamano;
@@ -25,13 +32,13 @@
     text-align: $text;
 }
 
-//cuarto mixin
+//quinto mixin
 @mixin text2($tamano,$interline){
     font-size: $tamano;
     line-height: $interline;
 }
 
-//quinto mixin
+//sexto mixin
 @mixin containers ($width,$alto,$margin,$border,$circulo){
     width: $width;//variable local
     height: $alto;//variable local
@@ -39,14 +46,15 @@
     border: $border;//variable local
     border-radius: $circulo;//variable local
 }
-//sexto mixin
+
+//octavo mixin
 @mixin containers-dos ($border,$circulo,$bg-color){
     border: $border;
     border-radius: $circulo;
     background-color: $bg-color;
 }
 
-//octavo mixin
+//noveno mixin
 @mixin grid ($margin,$gt-c,$gap,$width){
     display: grid;
     grid-template-columns: $gt-c;//variable local
@@ -55,7 +63,7 @@
     width: $width;//variable local
 }
 
-//noveno mixin
+//decimo mixin
 @mixin coloreado ($bg-c,$color){
     background-color: $bg-c;//variable local
     color: $color;//variable local
@@ -95,5 +103,14 @@
     border: solid 3px black;
     display: flex;
     justify-content: center;
+    border-radius: 10px;
+}
+
+//quinto extend aplicado en articulos de la section global 2 de "productos"
+.producto-section2-{
+    border: solid 2px black;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    text-align: center;
     border-radius: 10px;
 }

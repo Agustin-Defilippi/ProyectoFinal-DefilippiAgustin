@@ -88,7 +88,7 @@
     "liquido desechos gases"
     "liquido bombero gases";
     
-
+    
     /* Declarando los grid-area */
     .agua{
         grid-area: liquido;
@@ -138,6 +138,9 @@
             h2{ 
                 @extend .gd-prod-h2;
             }
+            p{
+                display: none;
+            }
         }
         @extend .articles-prod;
         img{
@@ -146,5 +149,217 @@
     }
 
 }
+//Secciones con sus articulos debajo del "grid-productos"
+.container-section2{
+    margin: 50px 0;
+    .cont-section2{
+        @include d-flex (row,center);
+        width: $ancho-w;
+    }
+    .agrupacion{
+        width: 65%;
+        border: $bord-er;
+        margin-bottom: 25px;
+        display: flex;
+        .producto-section2{
+           @extend .producto-section2-;
+           h2{
+            @include coloreado ($colorPrincipal,$colorSecundario);
+            margin-bottom: 30px;
+           }
+           .h3{
+                @include d-flex (row,center);            
+                 width: 100%;
+                .bg-h3{
+                    width: 65%;
+                    background-color: $colorTerciario;
+                    h3{
+                        margin-bottom: 15px;
+                    }
+                }
+           }
+           p{
+            font-size: 1.5em;
+            margin-bottom: 50px;
+            padding: 30px 0;
+           }
+           .d-logos{
+                @include d-flex (row,center);
+                a{
+                    .t-img{
+                        padding: 0 45px ;
+                    }
+                    .t-img2{
+                        width: 250px;
+                        height: 250px;
+                        margin: 0 45px;
+                    }
+                }
+           }
+        }
+    }
+}   
 
+//comienza Page de "OFERTAS" grid-system con Bostrap
+.container-fluid{
 
+    .colorh-2{
+        @include coloreado ($colorTerciario,$colorPrincipal);
+    }
+    .border-text{
+       @include containers-dos (solid 5px $colorPrincipal,0,$colorTerciario);
+    }
+
+    .border-sec{
+        @include containers-dos (solid 5px $colorTerciario,20px,$colorPrincipal);
+    }
+    .w-65{
+        @include acomodo-cont (space-between,center);
+        width: 65%;
+        background-color:$colorPrincipal;
+        border-radius: 20px;
+        .card{
+            width: 500px;
+            height: 58vh;
+            display: flex;
+            border: solid 2px wheat;
+            margin: 10px;
+            .width{
+                height: 50vh;
+                width: 100%;
+            }
+            .bord-img{
+                border-bottom: $bord-er;
+            }
+            
+           
+        }
+
+    }
+
+}
+
+//comienza Main-Grid de "Conocenos" aplicando nesting
+.grid-conocenos{
+   @include grid (60px,repeat(2,1fr),2px,100%);
+   grid-template-rows: 230px repeat(2,50vh) 300px;
+   grid-template-areas: 
+    "titulo titulo"
+    "principal movimiento"
+    "principal video"
+    "boton boton";
+    justify-content: center;
+
+    /* Declarando areas del Grid page "CONOCENOS" */
+    .h1-conocenos{
+        grid-area: titulo;
+    }
+    .desarrollo{
+        grid-area: principal;
+        @include d-flex (row,flex-end);
+        overflow: hidden;
+        .d-flex-desarrollo{
+            display: inline-block;
+            width: 65%;
+            border: $bord-er;
+            overflow: hidden;
+            img{
+                width:$ancho-w;
+                height: 50%;
+                padding: 10px 10px;
+                margin-bottom: 30px;
+                background-color: $colorPrincipal;
+            }
+            .container-p{
+                p{  
+                    @include text (1.5em,1.6em,$colorPrincipal,center);
+                    padding: 0 15px;
+                    overflow: hidden;
+                    &:hover{
+                        color: $colorTerciario;
+                    }
+                }
+            }
+        }
+    }
+    .carousell{
+        grid-area: movimiento;
+        @include d-flex (row,flex-start);
+        .container-carousell{
+            width: 63.5%;
+            margin-left: 10px;
+        }
+    }
+    .multime{
+        grid-area: video;
+        @include d-flex (row,flex-start);
+        .container-video{
+            @include acomodo-cont (center,stretch);
+            width: 63.5%;
+            height: auto;
+            margin-left: 10px;
+            background-color:$colorPrincipal;
+            .iframe-video{
+                @include d-flex (row,center);
+                width: $ancho-w;
+                height: 100%;
+            }
+        }
+    }
+    .buton{
+        grid-area: boton;
+        @include flex (row,wrap,center,flex-end);
+        margin-top: 20px;
+        
+        
+        .img-buton{
+            @include acomodo-cont (center,center);
+            height: 250px;
+            width: 65%;
+            background-color: $colorPrincipal;
+            .container-img-cono{
+                width: 40%;
+                height: 100%;
+                .produ-img{
+                    width: $ancho-w;
+                    height: 100%;
+                }
+            }
+            .conocenos-p{
+                @include text (1.5em,1.6em,$colorPrincipal,center);
+                width: 60%;
+                background-color: rgba(120, 224, 120);
+                padding: 0 15px;
+                border-radius: 15px;
+            }
+        }
+        .wsp{
+            height: 40px;
+            width: 65%;
+            margin: 0;
+            display: flex;
+            background-color: $colorPrincipal;
+            
+            .cont-a-wsp{
+                @include d-flex (row,center);
+                width: 40%;
+                height: 40px;
+                background-color:rgba(120, 224, 120);
+                align-items: center;
+                a{  
+                    color: $colorSecundario;
+                    background-color: $colorPrincipal;
+                    border-radius: 10px;
+                    text-decoration: none;
+                    &:hover{
+                        @include coloreado ($colorSecundario,$colorPrincipal);
+                    }
+                   button{
+                    @include coloreado (rgba(120, 224, 120),$colorSecundario);
+                    border-radius: 8px;
+                   }
+                }
+            }
+        }
+    }
+}
