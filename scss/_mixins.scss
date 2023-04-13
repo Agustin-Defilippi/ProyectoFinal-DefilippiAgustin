@@ -114,3 +114,18 @@
     text-align: center;
     border-radius: 10px;
 }
+
+//sexto extend aplicado en page "Formularios" o "contacto"
+.form-column-formularios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* //septimo extend aplicado en "grid-index" en MEDIA Q
+.st{
+    width: 100vw;
+    img{
+        width: 100vw;
+    }
+} */

@@ -161,6 +161,7 @@
         border: $bord-er;
         margin-bottom: 25px;
         display: flex;
+       
         .producto-section2{
            @extend .producto-section2-;
            h2{
@@ -310,8 +311,6 @@
         grid-area: boton;
         @include flex (row,wrap,center,flex-end);
         margin-top: 20px;
-        
-        
         .img-buton{
             @include acomodo-cont (center,center);
             height: 250px;
@@ -360,6 +359,92 @@
                    }
                 }
             }
+        }
+    }
+}
+
+//comienza page de "Contacto" aplicando nesting
+.section-container-contactanos{
+    @include d-flex (row,center);
+    width: $ancho-w;
+    margin-top: 50px;
+    .disposicion-contenidos{
+        @include flex (row,wrap,center,center);
+        width: $ancho-w;
+        
+        .conteiner-formularios{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: $ancho-w;
+            .b-g{
+                width: 45%;
+                display: flex;
+                justify-content: center;
+                background-color: $colorTerciario;
+                border-radius: 20px;
+                form{
+                    width: 90%;
+                    margin: 25px;
+    
+                    .border-form{
+                        @include containers-dos (solid $colorTerciario 2px,20px,$colorPrincipal);
+                        @extend .form-column-formularios;
+                        
+                        .tamanos-formularios{
+                            margin: 20px 0;
+                            input{
+                                width: 350px;
+                            }
+                            label{
+                                color: $colorSecundario;
+                                margin-bottom: 5px;
+                            }
+                        }
+                        .button1{
+                            margin: 15px 0;
+                            input{
+                                width: 110px;
+                            }
+                        }
+                        .button2{
+                            margin: 15px 0;
+                        }
+                        .column-formularios{
+                            @extend .form-column-formularios;
+                        }
+                    }
+                }
+            }
+        }
+        .ancho1{
+            width: 51%;
+            margin-bottom: 50px;
+        }
+    }   
+}
+.d-h2{
+    @include d-flex (row,center);
+    .indicacion-iframe{
+        @include coloreado ($colorPrincipal,$colorTerciario);
+        text-align: center;
+        height: 5vh;
+        margin-top: 40px;
+        width: 65%;
+    }
+}
+.find-us{
+    @include d-flex (row,center);
+    width: $ancho-w;
+    height: 60vh;
+    margin: 20px 0 35px 0;
+    .iframe-contactos{
+        @include flex (row,wrap,center,stretch); 
+        width: 65%;
+        height: 60vh;
+        background-color: $colorTerciario;
+        .widthh{
+            width: $ancho-w;
         }
     }
 }

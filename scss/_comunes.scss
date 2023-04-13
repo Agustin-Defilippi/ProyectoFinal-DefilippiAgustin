@@ -31,13 +31,13 @@ header{
 }
 
 //h1
-.cont-h1{
+.cont-h11{
     @include d-flex (row,center);
     width: $ancho-w;
-    .box-h1{
+    .box-h11{
         @include d-flex (row,center);
         width: 65%;
-        margin: 30px;
+        margin: 30px 0;
         border-radius: 20px;
         background-color: $colorPrincipal;
         h1{
@@ -47,6 +47,7 @@ header{
         }
     }
 }
+
 
 //h2
 h2{
