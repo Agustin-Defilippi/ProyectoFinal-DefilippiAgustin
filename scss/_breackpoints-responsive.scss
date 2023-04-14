@@ -211,12 +211,8 @@
         }
         h2{
             width: 100%;
-            
-            
-            
         }
     }
-    
 }   
 .container-fluid{
     .row{
@@ -233,11 +229,134 @@
     }
 }
    
+//Responsive al grid-conocenos
+.grid-conocenos{
+    
+    display: grid;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "titulo"
+    "principal"
+    "principal"
+    "video"
+    "boton"
+    "boton";
+    width: 100%;
+    row-gap: 130px;
+    gap: 100px;
+    margin-bottom: 30px;
+    
+    .h1-conocenos{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin-right: none;
+        h1{
+            text-align: center;
+            width: 95%;
+        }
+        
+    }
+    .desarrollo{
+        @include d-flex (row,center);
+        width: $ancho-w;
+        height:100%;
+        width: 100%;
+        
+        .d-flex-desarrollo{
+            display: block;
+            width: 80%;
+            background-color: $colorPrincipal;
+            border-radius: 10px;
+            img{
+                height: 50%;
+                width: 100%;
+            }
+            .container-p{
+                height: 80%;
+                p{
+                    color: $colorSecundario;
+                    &:hover{
+                        @include coloreado ($colorSecundario,$colorPrincipal);
+                    }
+                    font-size: 1.2em;
+                    line-height: 1.5em;
+                }
+            }
+        }
+    }
+    .carousell{
+     display: none;
+    }
+    .multime{
+        width: $ancho-w;
+        @include d-flex (row,center);
+        .container-video{
+            @include containers (95%,100%,2px,none,20px);
+            .iframe-video{
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+            }
+        }
+    }
+    .buton{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        border: $bord-er;
+        height: auto;
+        width: 100%;
+        margin-bottom: 100px;
+        background-color: black;
+        .img-buton{
+            width: 80%;
+            height: auto;
+            display: block;
+            justify-content: center;
+            background-color: white;
+            
+            .container-img-cono{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                height: auto;
+                margin-bottom: 15px;
+               
+            }
+            .conocenos-p{
+                width: 100%;
+                height: auto;
+                height: auto;
+                font-size: 1em;
+                line-height: 1.8em;
+            }
+        }   
+        .wsp{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            
+            .cont-a-wsp{
+                height: auto;
+                width: 80%;
+                background-color: white;
+            }
+        }
+    }
+}
 
 
 
 
-
+   /* width: 80%;
+            @include containers-dos (solid 2px $colorSecundario,20px,$colorTerciario); */
 
 
 
@@ -379,140 +498,7 @@
     }
 
 
-/* RESPONSIVE grid-conocenos */
-.grid-conocenos{
-    display: grid;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    overflow: hidden;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "titulo"
-    "principal"
-    "movimiento"
-    "video"
-    "boton";
-    width: 100%;
-    row-gap: 130px;
-    margin-bottom: 30px;
-}
 
-
-/* Aplicando css a nuestro Grid-conocenos */
-/* .cont-h1{
-    margin-top: 20px;
-    height: 35vh;
-} */
-/* Primer articulo del grid */
-.desarrollo{
-    display:flex;
-    justify-content: center;
-    width: 100%;
-}
-.desarrollo .text-edit{
-    width: 80%;
-    border: solid 2px white;
-    border-radius: 20px;
-}
-.desarrollo .d-flex-desarrollo .container-p{
-    max-width: 100%;
-}
-.desarrollo .d-flex-desarrollo .container-p p{
-    font-size: 1.5em;
-    line-height: 1.5em;
-    padding: 0 20px;
-}
-
-.d-flex-desarrollo{
-    display: block;
-    width: 100%;
-    background-color: wheat;
-}
-
-/* Segundo articulo del Grid */
-.carousell{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-    border-radius: 20px;
-}
-.container-carousell{
-    border-radius: 20px;
-    margin-right: 7px;
-    width: 80%;
-    height: 100%;
-}
-.container-carousell img{
-    border-radius: 20px;
-    height: 100%;
-}
-
-/* Tercer articulo del Grid */
-.multime{
-    width: 100%;
-    
-    display: flex;
-    justify-content: center;
-   /*  margin-bottom: 130px; */
-}
-.multime .container-video{
-    width: 90%;
-    height: 100%;
-    border-radius: 20px;
-    margin-right: 7px;
-    margin-bottom: 100px;
-}
-.multime .container-video .iframe-video{
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-}
-
-/* Cuarto article del Grid "BUTON" */
-.buton{
-   display: flex;
-   border: solid 2px black;
-}
-.img-buton{
-    width: 90%;
-    display: flex;
-}
-.produ-img{
-    width: 100%;
-    height: 100%;
-}
-.container-img-cono{
-    width: 40%;
-}
-.img-buton .conocenos-p{
-    padding: 0 20px;
-    width: 60%;
-    font-size: 0.9em;
-    max-width: 100%;
-    height: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: solid 1px white;
-    overflow: hidden;
-}
-.grid-conocenos .wsp{
-    display: flex;
-    justify-content: flex-start;
-    width: 90%;
-    height: auto;
-}
-.cont-a-wsp{
-   height: auto;
-   width: 40%;
-}
-.wsp a{
-    padding: 0;
-}
-/* Finaliza cuarto articulo del grid-conocenos */
-/* Final del Grid de CONOCENOS */
 
 /* INICIO de Responsive a la pagina "CONTACTOS" en mobile */
 /* aplicando css al contenido de "Contacto" */
