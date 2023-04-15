@@ -1,4 +1,16 @@
-@media(min-width:290px) and (max-width:767px){
+// MEDIAS QUERY APLICADAS AL DISEÑO RESPONSIVE DE DISPOSITIVOS SMALL
+@media(min-width:320px) and (max-width:767px){
+
+    //responsive al navegador 
+    nav ul{
+        display:flex;
+        flex-direction: column  !important;
+    }
+
+    //responsive aplicado a clase w-65 del carousel
+    .w-65{
+        width: 100vw;
+    }
 
     //responsive a h1
     .cont-h11{
@@ -204,13 +216,13 @@
    //responsive a page "OFERTAS"
 .container-fluid{
     .media1{
-        width: 100%;
+        width: $ancho-w;
         justify-content: none;
         .w-50{
-            width: 100;  
+            width: $ancho-w;  
         }
         h2{
-            width: 100%;
+            width: $ancho-w;  
         }
     }
 }   
@@ -221,8 +233,7 @@
             .card{
                 width:80%;
                 height: 100%;
-                display: flex;
-                justify-content: center;
+                @include d-flex (column,center);
                 
             }
         }
@@ -251,22 +262,15 @@
     margin-bottom: 30px;
     
     .h1-conocenos{
-        display: flex;
-        align-items: center;
-        width: 100%;
-        height: auto;
-        margin-right: none;
         h1{
-            text-align: center;
-            width: 95%;
+           width: $ancho-w;
         }
-        
     }
     .desarrollo{
         @include d-flex (row,center);
         width: $ancho-w;
         height:100%;
-        width: 100%;
+        width: $ancho-w;
         
         .d-flex-desarrollo{
             display: block;
@@ -275,7 +279,7 @@
             border-radius: 10px;
             img{
                 height: 50%;
-                width: 100%;
+                width: $ancho-w;
             }
             .container-p{
                 height: 80%;
@@ -284,8 +288,7 @@
                     &:hover{
                         @include coloreado ($colorSecundario,$colorPrincipal);
                     }
-                    font-size: 1.2em;
-                    line-height: 1.5em;
+                    @include text2(1.2em,1.5em);
                 }
             }
         }
@@ -299,111 +302,108 @@
         .container-video{
             @include containers (95%,100%,2px,none,20px);
             .iframe-video{
-                width: 100%;
+                width: $ancho-w;
                 height: 100%;
                 border-radius: 10px;
             }
         }
     }
     .buton{
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
+        @include acomodo-cont (center,flex-start);
         border: $bord-er;
         height: auto;
-        width: 100%;
+        width: $ancho-w;
         margin-bottom: 100px;
-        background-color: black;
+        background-color: $colorPrincipal;
         .img-buton{
             width: 80%;
             height: auto;
             display: block;
             justify-content: center;
-            background-color: white;
+            background-color: $colorSecundario;
             
             .container-img-cono{
-                display: flex;
-                justify-content: center;
-                width: 100%;
+                @include d-flex (row,center);
+                width: $ancho-w;
                 height: auto;
                 margin-bottom: 15px;
                
             }
             .conocenos-p{
-                width: 100%;
+                width: $ancho-w;
                 height: auto;
-                height: auto;
-                font-size: 1em;
-                line-height: 1.8em;
+                @include text2($size,1.8em);
             }
         }   
         .wsp{
-            width: 100%;
+            width: $ancho-w;
             height: auto;
-            display: flex;
-            justify-content: center;
+            @include d-flex (row,center);
             
             .cont-a-wsp{
                 height: auto;
                 width: 80%;
-                background-color: white;
+                background-color: $colorSecundario;
             }
         }
     }
 }
 
-
-
-
-   /* width: 80%;
-            @include containers-dos (solid 2px $colorSecundario,20px,$colorTerciario); */
-
-
-
-   /*  .col-sm-12 .media{
-        width: 300px;
-        height: 55vh;
+//Responsive a page "Contactos"
+.section-container-contactanos{
+    width: $ancho-w;
+    .disposicion-contenidos{
+        width: $ancho-w;
+        .ancho1{
+            height: auto;
+            p{
+                height: auto;
+                font-size: 1.2em;
+            }
+        }
+        .conteiner-formularios{
+            @include d-flex (row,center);
+            width: 90%;
+            .b-g{
+                width: $ancho-w;
+                form{
+                    width: $ancho-w;
+                    .border-form{
+                        .tamanos-formularios{
+                            width: $ancho-w;
+                            input{
+                                width: 80%;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+        .ancho{
+            width: 90%;
+        }
     }
-    .section .row .w-65{
-        width: 100%;
-        height: 260%;
+    
+}
+.d-h2{
+    width: $ancho-w;
+    .indicacion-iframe{
+        width: 90%;
+        .mb-w{
+            width: 20px;
+            height: auto;
+        }
     }
-    .box-h1{
-        width: 100vw;
-        display: flex;
+}   
+.find-us{
+    margin-bottom: 50px;
+    .iframe-contactos{
+        width: 90%;
     }
-    .container-fluid h1{
-        font-size: 2.3em;
-        display: flex;
-    }
-    .card p{
-        font-size: 1em;
-    }
+}
 
- */
-
-    
-    
-   
-    
-    
- 
-    
-    
-    .text-edit{
-        overflow: hidden;
-        text-align: center;
-        font-size: 0.80em;
-    }
-
-    /* responsive aplicado a clase w-65 del carousel */
-    .w-65{
-        width: 100vw;
-    }
-
-    
-
-    /* aplicando responsive a las seccion multimedia fuera del main  */
+// aplicando responsive a las seccion multimedia fuera del main  
     .flex-conteiner-multimedia{
         width: 100vw;
         height: 50vh;
@@ -412,22 +412,19 @@
             width: 100%;
             .w-65{
                 width: 100%;
-                background-color: black;
+                background-color: $colorPrincipal;
                 display: flex;
                 flex-wrap: wrap;
                 .d-flex-1{
                     width: 100%;
-                    display: flex;
-                    justify-content: center;
+                    @include d-flex (row,center);
                     .wrap-svg-1{
                         width: 100vw;
-                        display: flex;
+                        @include d-flex (row,center);
                         margin: 10px 10px;
-                        justify-content: center;
                     }
                     .wrap-svg-2{
-                        display: flex;
-                        justify-content: center;
+                        @include d-flex (row,center);
                         width: 100vw;
                         margin-top: 18px;
                         .edit-audio{
@@ -436,18 +433,16 @@
                     }
                 }
                 .flex-w{
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: center;
+                    @include flex (row,wrap,center,center); 
+                    
                 }
                 .d-flex-2{
-                    width: 100%;
+                    width: $ancho-w;
                     display: flex;
                     flex-wrap: wrap;
                     .flex-wrap-2{
                         width: 100vw;
-                        display: flex;
-                        justify-content: center;
+                        @include d-flex (row,center);
                         margin-bottom: 20px;
                     }
                     .flex-wrap-2-w{
@@ -459,77 +454,27 @@
         }
     }
     
-  
-   
-    
-    .dis-audio{
-        display: flex;
-        justify-content: center;
-    }
-    
-    
-    
-    
-    .flex-conteiner-multimedia .tamano-multimedia{
-        width: 20vw;
-    }
-    
-    
     /* responsive aplicado al footer */
     footer{
-        width: 100vw;
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
+        .container-wrap{
+            width: 100%;
+            @include d-flex (row,center);
+            .css-text{
+                @include d-flex (row,center);
+                text-align: center;
+            }
+        }
     }
-    .container-wrap{
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-    }
-    .container-wrap p{
-        display: flex;
-        justify-content: center;
+
+    .text-edit{
+        overflow: hidden;
         text-align: center;
+        font-size: 0.80em;
     }
-    /* responsive al navegador */
-    nav ul{
-        display:flex;
-        flex-direction: column  !important;
-    }
+    // fin del Responsive a "Contactos en dispositivos mobiles" 
+}
 
-
-
-
-/* INICIO de Responsive a la pagina "CONTACTOS" en mobile */
-/* aplicando css al contenido de "Contacto" */
-.section-container-contactanos{
-    width: 100%;
-}
-.disposicion-contenidos{
-    width: 100%;
-}
-.conteiner-formularios{
-    display: flex;
-    justify-content: center;
-}
-.ancho{
-    width: 90%;
-}
-.d-h2{
-    width: 100%;
-}
-.d-h2 .indicacion-iframe{
-    width: 90%;
-}
-.d-h2 .indicacion-iframe .mb-w{
-    width: 20px;
-    height: auto;
-}
-.iframe-contactos{
-    width: 90%;
-}
-.find-us{
-    margin-bottom: 50px;
-}
-/* fin del Responsive a "Contactos en dispositivos mobiles" */
-}
+// MEDIAS QUERY APLICADAS AL DISEÑO RESPONSIVE DE DISPOSITIVOS MEDIUM
