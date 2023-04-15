@@ -97,6 +97,11 @@
             h2{ 
                 @extend .gd-prod-h2;
             }
+            p{
+                font-size: 1.2em;
+                line-height: 2.2em;
+                padding: 0 15px;
+            }
         }
         @extend .articles-prod;
         img{
@@ -111,6 +116,11 @@
             h2{ 
                 @extend .gd-prod-h2;
             }
+            p{
+                font-size: 1.2em;
+                line-height: 1.8em;
+                padding: 0 15px;
+            }
         }
         @extend .articles-prod;
         img{
@@ -123,6 +133,11 @@
             width: $ancho-w;
             h2{ 
                 @extend .gd-prod-h2;
+            }
+            p{
+                font-size: 1.2em;
+                line-height: 2em;
+                padding: 0 15px;
             }
         }
         @extend .articles-prod;
@@ -139,7 +154,9 @@
                 @extend .gd-prod-h2;
             }
             p{
-                display: none;
+                font-size: 1.2em;
+                line-height: 2em;
+                padding: 0 15px;
             }
         }
         @extend .articles-prod;
@@ -262,22 +279,32 @@
         .d-flex-desarrollo{
             display: inline-block;
             width: 65%;
+            height: auto;
             border: $bord-er;
             overflow: hidden;
             img{
                 width:$ancho-w;
-                height: 50%;
+                height: auto;
                 padding: 10px 10px;
                 margin-bottom: 30px;
                 background-color: $colorPrincipal;
             }
             .container-p{
+                display: flex;
+                justify-content: center;
+                height: auto;
+                
                 p{  
-                    @include text (1.5em,1.6em,$colorPrincipal,center);
+                    @include text (1em,2em,$colorPrincipal,center);
                     padding: 0 15px;
                     overflow: hidden;
+                    height: 10%;
+                    
                     &:hover{
-                        color: $colorTerciario;
+                        margin: 0 15px;
+                        color: $colorSecundario;
+                        background-color: $colorPrincipal;
+                        border-radius: 10px;
                     }
                 }
             }
@@ -371,6 +398,11 @@
     .disposicion-contenidos{
         @include flex (row,wrap,center,center);
         width: $ancho-w;
+        .ancho1{
+            font-size: 1.5em;
+            text-align: center;
+            background-color: wheat;
+        }
         
         .conteiner-formularios{
             display: flex;

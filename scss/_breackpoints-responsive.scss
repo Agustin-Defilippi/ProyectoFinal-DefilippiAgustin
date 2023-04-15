@@ -100,6 +100,8 @@
                     color: $colorTerciario;
                 }
                 p{
+                    padding: 0 10px;
+                    line-height: 2em;
                     color: $colorSecundario;
                     &:hover{
                         @include coloreado ($colorSecundario,$colorPrincipal);
@@ -118,6 +120,7 @@
                     color: $colorTerciario;
                 }
                 p{
+                   
                     color: $colorSecundario;
                     &:hover{
                         @include coloreado ($colorSecundario,$colorPrincipal);
@@ -138,6 +141,8 @@
                     color: $colorTerciario;
                 }
                 p{
+                    padding: 0 10px;
+                    line-height: 2em;
                     color: $colorSecundario;
                     &:hover{
                         @include coloreado ($colorSecundario,$colorPrincipal);
@@ -168,6 +173,8 @@
                     color: $colorTerciario;
                 }
                 p{
+                    padding: 0 10px;
+                    line-height: 2em;
                     display: block;
                     color: $colorSecundario;
                     &:hover{
@@ -269,26 +276,29 @@
     .desarrollo{
         @include d-flex (row,center);
         width: $ancho-w;
-        height:100%;
+        height:auto;
         width: $ancho-w;
         
         .d-flex-desarrollo{
             display: block;
-            width: 80%;
+            width: auto;
             background-color: $colorPrincipal;
             border-radius: 10px;
             img{
-                height: 50%;
+                height: auto;
                 width: $ancho-w;
             }
             .container-p{
-                height: 80%;
+                height: auto;
+                width: auto;
                 p{
+                    /* height: auto;
+                    width: auto; */
                     color: $colorSecundario;
                     &:hover{
                         @include coloreado ($colorSecundario,$colorPrincipal);
                     }
-                    @include text2(1.2em,1.5em);
+                    @include text2(auto,auto);
                 }
             }
         }
@@ -589,13 +599,17 @@
         "boton boton";
         row-gap: 5vh;
         .desarrollo{
-            width: 95%;
-            height: 100%;
+            width: auto;
+            height: auto;
             display: flex;
             margin-left: 10px;
             background-color: $colorPrincipal;
             .d-flex-desarrollo{
                 width: $ancho-w;
+                img{
+                    width: $ancho-w;
+                    height: auto
+                }
                 .container-p{
                     @include d-flex (row,center);
                     p{
@@ -603,7 +617,7 @@
                         height: auto;
                         &:hover{
                             @include coloreado ($colorSecundario,$colorPrincipal);
-                            width: 80%;
+                            width: auto;
                             border-radius: 10px;
                         }
                     }
@@ -739,7 +753,8 @@
 
 }
 
-@media(min-width: 992px) and (max-width: 1900px){
+//definiendo min y max de la section debajo del main
+@media(min-width: 1201px) and (max-width: 1900px){
     .flex-conteiner-multimedia{
         width: 100%;
         height: 15vh;
@@ -747,7 +762,7 @@
         .w-section{
             width: 100%;
             .w-65{
-                width: 100%;
+                width: 65%;
                 .d-flex-1{
                     width: auto;
                     .wrap-svg-1{
@@ -756,5 +771,12 @@
                 }
             }
         }
+    }
+}
+
+//olcultando filtros
+@media (min-width:992px) and (max-width:1430px){
+    .grid-index .filtros{
+        display: none;
     }
 }

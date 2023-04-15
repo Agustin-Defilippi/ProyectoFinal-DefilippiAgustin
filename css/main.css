@@ -373,11 +373,21 @@ footer .container-wrap .css-text {
 .grid-productos .agua .container-section-product {
   width: 100%;
 }
+.grid-productos .agua .container-section-product p {
+  font-size: 1.2em;
+  line-height: 2.2em;
+  padding: 0 15px;
+}
 .grid-productos .gas {
   grid-area: gases;
 }
 .grid-productos .gas .container-section-product {
   width: 100%;
+}
+.grid-productos .gas .container-section-product p {
+  font-size: 1.2em;
+  line-height: 1.8em;
+  padding: 0 15px;
 }
 .grid-productos .cloaca {
   grid-area: desechos;
@@ -386,6 +396,11 @@ footer .container-wrap .css-text {
 .grid-productos .cloaca .container-section-product {
   width: 100%;
 }
+.grid-productos .cloaca .container-section-product p {
+  font-size: 1.2em;
+  line-height: 2em;
+  padding: 0 15px;
+}
 .grid-productos .incendio {
   grid-area: bombero;
 }
@@ -393,7 +408,9 @@ footer .container-wrap .css-text {
   width: 100%;
 }
 .grid-productos .incendio .container-section-product p {
-  display: none;
+  font-size: 1.2em;
+  line-height: 2em;
+  padding: 0 15px;
 }
 .container-section2 {
   margin: 50px 0;
@@ -508,26 +525,36 @@ footer .container-wrap .css-text {
 .grid-conocenos .desarrollo .d-flex-desarrollo {
   display: inline-block;
   width: 65%;
+  height: auto;
   border: solid 2px black;
   overflow: hidden;
 }
 .grid-conocenos .desarrollo .d-flex-desarrollo img {
   width: 100%;
-  height: 50%;
+  height: auto;
   padding: 10px 10px;
   margin-bottom: 30px;
   background-color: black;
 }
+.grid-conocenos .desarrollo .d-flex-desarrollo .container-p {
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
 .grid-conocenos .desarrollo .d-flex-desarrollo .container-p p {
-  font-size: 1.5em;
-  line-height: 1.6em;
+  font-size: 1em;
+  line-height: 2em;
   color: black;
   text-align: center;
   padding: 0 15px;
   overflow: hidden;
+  height: 10%;
 }
 .grid-conocenos .desarrollo .d-flex-desarrollo .container-p p:hover {
-  color: wheat;
+  margin: 0 15px;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
 }
 .grid-conocenos .carousell {
   grid-area: movimiento;
@@ -642,6 +669,11 @@ footer .container-wrap .css-text {
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+.section-container-contactanos .disposicion-contenidos .ancho1 {
+  font-size: 1.5em;
+  text-align: center;
+  background-color: wheat;
 }
 .section-container-contactanos .disposicion-contenidos .conteiner-formularios {
   display: flex;
@@ -865,6 +897,8 @@ footer .container-wrap .css-text {
     color: wheat;
   }
   .grid-productos .agua .container-section-product p {
+    padding: 0 10px;
+    line-height: 2em;
     color: white;
   }
   .grid-productos .agua .container-section-product p:hover {
@@ -908,6 +942,8 @@ footer .container-wrap .css-text {
     color: wheat;
   }
   .grid-productos .cloaca .container-section-product p {
+    padding: 0 10px;
+    line-height: 2em;
     color: white;
   }
   .grid-productos .cloaca .container-section-product p:hover {
@@ -934,6 +970,8 @@ footer .container-wrap .css-text {
     color: wheat;
   }
   .grid-productos .incendio .container-section-product p {
+    padding: 0 10px;
+    line-height: 2em;
     display: block;
     color: white;
   }
@@ -1004,26 +1042,29 @@ footer .container-wrap .css-text {
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    height: 100%;
+    height: auto;
     width: 100%;
   }
   .grid-conocenos .desarrollo .d-flex-desarrollo {
     display: block;
-    width: 80%;
+    width: auto;
     background-color: black;
     border-radius: 10px;
   }
   .grid-conocenos .desarrollo .d-flex-desarrollo img {
-    height: 50%;
+    height: auto;
     width: 100%;
   }
   .grid-conocenos .desarrollo .d-flex-desarrollo .container-p {
-    height: 80%;
+    height: auto;
+    width: auto;
   }
   .grid-conocenos .desarrollo .d-flex-desarrollo .container-p p {
+    /* height: auto;
+    width: auto; */
     color: white;
-    font-size: 1.2em;
-    line-height: 1.5em;
+    font-size: auto;
+    line-height: auto;
   }
   .grid-conocenos .desarrollo .d-flex-desarrollo .container-p p:hover {
     background-color: white;
@@ -1314,14 +1355,18 @@ footer .container-wrap .css-text {
     row-gap: 5vh;
   }
   .grid-conocenos .desarrollo {
-    width: 95%;
-    height: 100%;
+    width: auto;
+    height: auto;
     display: flex;
     margin-left: 10px;
     background-color: black;
   }
   .grid-conocenos .desarrollo .d-flex-desarrollo {
     width: 100%;
+  }
+  .grid-conocenos .desarrollo .d-flex-desarrollo img {
+    width: 100%;
+    height: auto;
   }
   .grid-conocenos .desarrollo .d-flex-desarrollo .container-p {
     display: flex;
@@ -1335,7 +1380,7 @@ footer .container-wrap .css-text {
   .grid-conocenos .desarrollo .d-flex-desarrollo .container-p p:hover {
     background-color: white;
     color: black;
-    width: 80%;
+    width: auto;
     border-radius: 10px;
   }
   .grid-conocenos .carousell {
@@ -1460,7 +1505,7 @@ footer .container-wrap .css-text {
     margin-right: 10px;
   }
 }
-@media (min-width: 992px) and (max-width: 1900px) {
+@media (min-width: 1201px) and (max-width: 1900px) {
   .flex-conteiner-multimedia {
     width: 100%;
     height: 15vh;
@@ -1470,13 +1515,18 @@ footer .container-wrap .css-text {
     width: 100%;
   }
   .flex-conteiner-multimedia .w-section .w-65 {
-    width: 100%;
+    width: 65%;
   }
   .flex-conteiner-multimedia .w-section .w-65 .d-flex-1 {
     width: auto;
   }
   .flex-conteiner-multimedia .w-section .w-65 .d-flex-1 .wrap-svg-1 {
     margin-right: 10px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1430px) {
+  .grid-index .filtros {
+    display: none;
   }
 }
 
