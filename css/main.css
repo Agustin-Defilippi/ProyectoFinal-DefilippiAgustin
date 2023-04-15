@@ -43,13 +43,6 @@
   align-items: center;
 }
 
-/* //septimo extend aplicado en "grid-index" en MEDIA Q
-.st{
-    width: 100vw;
-    img{
-        width: 100vw;
-    }
-} */
 * {
   font-family: "Oswald", sans-serif;
   font-weight: 500;
@@ -1232,6 +1225,258 @@ footer .container-wrap .css-text {
     overflow: hidden;
     text-align: center;
     font-size: 0.8em;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .container-flex-carousel .w-65 {
+    width: 100vw;
+  }
+  .cont-h11 .box-h11 {
+    width: 100%;
+  }
+  .cont-h11 .box-h11 h1 {
+    width: 100%;
+  }
+  .grid-index {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 30px;
+    gap: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    grid-template-rows: 4, 20vh;
+    grid-template-areas: "h1 h1" "inodoro canillas" "pisos plomero" "filtres filtres";
+    padding: 0 2vw;
+  }
+  .grid-index .filtros {
+    display: none;
+  }
+  .grid-productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 30px;
+    gap: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    grid-template-areas: "liquido gases" "desechos bombero";
+    row-gap: 10vh;
+  }
+  .grid-productos .incendio .container-section-product p {
+    display: block;
+  }
+  .container-section2 {
+    padding: 0 15px;
+    width: 100%;
+  }
+  .container-section2 .cont-section2 {
+    width: 100%;
+  }
+  .container-section2 .cont-section2 .agrupacion {
+    width: 100%;
+  }
+  .container-section2 .cont-section2 .agrupacion .producto-section2 {
+    width: 100%;
+  }
+  .container-section2 .cont-section2 .agrupacion .producto-section2 .d-logos .t-img {
+    width: 100%;
+  }
+  .container-fluid .media1 {
+    width: 100%;
+    justify-content: none;
+  }
+  .container-fluid .media1 .w-50 {
+    width: 100%;
+  }
+  .container-fluid .media1 h2 {
+    width: 100%;
+  }
+  .container-fluid .row {
+    width: 100%;
+  }
+  .container-fluid .row .col-md-6 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 600px;
+    width: 450px;
+  }
+  .grid-conocenos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 35px;
+    gap: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    grid-template-areas: "titulo titulo" "principal movimiento" "principal video" "boton boton";
+    row-gap: 5vh;
+  }
+  .grid-conocenos .desarrollo {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    margin-left: 10px;
+    background-color: black;
+  }
+  .grid-conocenos .desarrollo .d-flex-desarrollo {
+    width: 100%;
+  }
+  .grid-conocenos .desarrollo .d-flex-desarrollo .container-p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .grid-conocenos .desarrollo .d-flex-desarrollo .container-p p {
+    color: white;
+    height: auto;
+  }
+  .grid-conocenos .desarrollo .d-flex-desarrollo .container-p p:hover {
+    background-color: white;
+    color: black;
+    width: 80%;
+    border-radius: 10px;
+  }
+  .grid-conocenos .carousell {
+    width: 100%;
+    height: 100%;
+  }
+  .grid-conocenos .carousell .container-carousell {
+    width: 95%;
+    height: 100%;
+  }
+  .grid-conocenos .carousell .container-carousell img {
+    width: 100%;
+  }
+  .grid-conocenos .multime {
+    width: 97%;
+  }
+  .grid-conocenos .multime .container-video {
+    width: 100%;
+  }
+  .grid-conocenos .buton {
+    display: flex;
+    border: solid 2px black;
+    border-radius: none;
+    background-color: black;
+  }
+  .grid-conocenos .buton .img-buton {
+    width: 100%;
+    height: 80%;
+    display: flex;
+  }
+  .grid-conocenos .buton .img-buton .container-img-cono .produ-img {
+    width: 100%;
+    height: 100%;
+  }
+  .grid-conocenos .buton .img-buton .conocenos-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    width: 60%;
+    font-size: 1em;
+    max-width: 100%;
+    height: 100%;
+  }
+  .grid-conocenos .buton .wsp {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    height: 15%;
+  }
+  .grid-conocenos .buton .wsp .cont-a-wsp {
+    height: auto;
+    width: 40%;
+    height: 100%;
+  }
+  .grid-conocenos .buton .wsp .cont-a-wsp a {
+    padding: 0;
+  }
+  .section-container-contactanos {
+    width: 100%;
+  }
+  .section-container-contactanos .disposicion-contenidos {
+    width: 70%;
+  }
+  .section-container-contactanos .disposicion-contenidos .ancho1 {
+    height: auto;
+  }
+  .section-container-contactanos .disposicion-contenidos .ancho1 p {
+    height: auto;
+    font-size: 1.2em;
+  }
+  .section-container-contactanos .disposicion-contenidos .conteiner-formularios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  .section-container-contactanos .disposicion-contenidos .conteiner-formularios .b-g {
+    width: 100%;
+  }
+  .section-container-contactanos .disposicion-contenidos .conteiner-formularios .b-g form {
+    width: 100%;
+  }
+  .section-container-contactanos .disposicion-contenidos .conteiner-formularios .b-g form .border-form .tamanos-formularios {
+    width: 65%;
+  }
+  .section-container-contactanos .disposicion-contenidos .conteiner-formularios .b-g form .border-form .tamanos-formularios input {
+    width: 65%;
+  }
+  .section-container-contactanos .disposicion-contenidos .ancho {
+    width: 90%;
+  }
+  .d-h2 {
+    width: 100%;
+  }
+  .d-h2 .indicacion-iframe {
+    width: 90%;
+  }
+  .d-h2 .indicacion-iframe .mb-w {
+    width: 20px;
+    height: auto;
+  }
+  .find-us {
+    margin-bottom: 50px;
+  }
+  .find-us .iframe-contactos {
+    width: 90%;
+  }
+  .flex-conteiner-multimedia {
+    width: 100%;
+    height: 15vh;
+    padding: 0 2vw;
+  }
+  .flex-conteiner-multimedia .w-section {
+    width: 100%;
+  }
+  .flex-conteiner-multimedia .w-section .w-65 {
+    width: 100%;
+  }
+  .flex-conteiner-multimedia .w-section .w-65 .d-flex-1 .wrap-svg-1 {
+    margin-right: 10px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1900px) {
+  .flex-conteiner-multimedia {
+    width: 100%;
+    height: 15vh;
+    padding: 0 2vw;
+  }
+  .flex-conteiner-multimedia .w-section {
+    width: 100%;
+  }
+  .flex-conteiner-multimedia .w-section .w-65 {
+    width: 100%;
+  }
+  .flex-conteiner-multimedia .w-section .w-65 .d-flex-1 {
+    width: auto;
+  }
+  .flex-conteiner-multimedia .w-section .w-65 .d-flex-1 .wrap-svg-1 {
+    margin-right: 10px;
   }
 }
 

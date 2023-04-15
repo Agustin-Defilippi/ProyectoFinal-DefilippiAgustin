@@ -478,3 +478,283 @@
 }
 
 // MEDIAS QUERY APLICADAS AL DISEÑO RESPONSIVE DE DISPOSITIVOS MEDIUM
+@media(min-width: 768px) and (max-width: 1200px){
+    .container-flex-carousel{
+        .w-65{
+            width: 100vw;
+        }
+    }
+
+    //responsive para h1 y sus contenedores
+    .cont-h11{
+        .box-h11{
+            width: 100%;
+            h1{
+                width: 100%;
+            }
+        }
+    }
+
+    //responsive a "grid-index" para dispositivos medianos
+    .grid-index{
+        @include grid (30px,repeat(2,1fr),15px,100%);
+        box-sizing: border-box;
+        overflow: hidden;
+        grid-template-rows: 4,20vh;
+        grid-template-areas: 
+        "h1 h1"
+        "inodoro canillas"
+        "pisos plomero"
+        "filtres filtres";
+        padding: 0 2vw;
+        .filtros{
+            display: none;
+        }
+    }
+
+    //responsive a "grid-productos" para dispositivos medianos
+    .grid-productos{
+        @include grid (30px,repeat(2,1fr),15px,100%);
+        box-sizing: border-box;
+        overflow: hidden;
+        grid-template-areas: 
+        "liquido gases"
+        "desechos bombero";
+        row-gap: 10vh;
+        .incendio{
+            .container-section-product{
+                p{
+                    display: block;
+                }
+                
+            }
+        }
+    }
+    //responsive a la segunda seccion globlal de productos
+    .container-section2{
+        padding: 0 15px;
+        width: 100%;
+        .cont-section2{
+            width: 100%;
+            .agrupacion{
+                width: 100%;
+                .producto-section2{
+                    width: 100%;
+                    .d-logos{
+                        .t-img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //responsive a "ofertas" para dispositivos medianos
+
+    .container-fluid{
+        .media1{
+            width: $ancho-w;
+            justify-content: none;
+            .w-50{
+                width: $ancho-w;  
+            }
+            h2{
+                width: $ancho-w;  
+            }
+        }
+    }   
+    .container-fluid{
+        .row{
+            width: 100%;
+            .col-md-6{
+                .card{
+                    @include d-flex (column,center);
+                    height: 600px;
+                    width: 450px;
+                }
+            }
+        }
+    }
+    
+    //responsive a "grid-productos" para dispositivos medianos
+    .grid-conocenos{
+        @include grid (35px,repeat(2,1fr),15px,100%);
+        box-sizing: border-box;
+        overflow: hidden;
+        grid-template-areas: 
+        "titulo titulo"
+        "principal movimiento"
+        "principal video"
+        "boton boton";
+        row-gap: 5vh;
+        .desarrollo{
+            width: 95%;
+            height: 100%;
+            display: flex;
+            margin-left: 10px;
+            background-color: $colorPrincipal;
+            .d-flex-desarrollo{
+                width: $ancho-w;
+                .container-p{
+                    @include d-flex (row,center);
+                    p{
+                        color: $colorSecundario;
+                        height: auto;
+                        &:hover{
+                            @include coloreado ($colorSecundario,$colorPrincipal);
+                            width: 80%;
+                            border-radius: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .carousell{
+            width: $ancho-w;
+            height: 100%;
+            .container-carousell{
+                width: 95%;
+                height: 100%;
+                img{
+                    width: $ancho-w;
+                }
+            }
+        }
+        .multime{
+            width: 97%;
+            .container-video{
+                width: 100%;
+            }
+        }
+        .buton{
+            display: flex;
+            @include containers-dos ($bord-er,none,$colorPrincipal);
+            .img-buton{
+                width: $ancho-w;
+                height: 80%;
+                display: flex;
+                .container-img-cono{
+                    .produ-img{
+                        width: $ancho-w;
+                        height: 100%;
+                    }
+                }
+                .conocenos-p{
+                    @include acomodo-cont (center,center); 
+                    padding: 0 20px;
+                    width: 60%;
+                    font-size: $size;
+                    max-width: 100%;
+                    height: 100%;
+                }
+            }
+            .wsp{
+                @include d-flex (row,flex-start);
+                width: $ancho-w;
+                height: 15%;
+                .cont-a-wsp{
+                    height: auto;
+                    width: 40%;
+                    height: 100%;
+                    a{
+                        padding: 0; 
+                    }
+                }
+            }
+        }
+    }
+
+    .section-container-contactanos{
+        width: $ancho-w;
+        .disposicion-contenidos{
+            width: 70%;
+            .ancho1{
+                height: auto;
+                p{
+                    height: auto;
+                    font-size: 1.2em;
+                }
+            }
+            .conteiner-formularios{
+                @include d-flex (row,center);
+                width: 100%;
+                .b-g{
+                    width: $ancho-w;
+                    form{
+                        width: 100%;
+                        .border-form{
+                            .tamanos-formularios{
+                                width: 65%;
+                                input{
+                                    width: 65%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .ancho{
+                width: 90%;
+            }
+        }
+        
+    }
+    .d-h2{
+        width: $ancho-w;
+        .indicacion-iframe{
+            width: 90%;
+            .mb-w{
+                width: 20px;
+                height: auto;
+            }
+        }
+    }   
+    .find-us{
+        margin-bottom: 50px;
+        .iframe-contactos{
+            width: 90%;
+        }
+    }
+
+   
+   
+    // aplicando responsive a las seccion multimedia fuera del main dispositivos medianos
+    .flex-conteiner-multimedia{
+        width: $ancho-w;
+        height: 15vh;
+        padding: 0 2vw;
+        .w-section{
+            width: $ancho-w;
+            .w-65{
+                width: $ancho-w;
+                .d-flex-1{
+                    .wrap-svg-1{
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media(min-width: 992px) and (max-width: 1900px){
+    .flex-conteiner-multimedia{
+        width: 100%;
+        height: 15vh;
+        padding: 0 2vw;
+        .w-section{
+            width: 100%;
+            .w-65{
+                width: 100%;
+                .d-flex-1{
+                    width: auto;
+                    .wrap-svg-1{
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
