@@ -222,6 +222,23 @@
     
    //responsive a page "OFERTAS"
 .container-fluid{
+    .animation{
+        width: $ancho-w;
+        .div-container-anima{
+            width: $ancho-w;
+            height: auto;
+            .animate{
+                width: 50%;
+                height: auto;
+                display: flex;
+                align-items: center;
+                font-size: 0.9em !important;
+                svg{
+                    display: none;
+                }
+            }
+        }
+    }
     .media1{
         width: $ancho-w;
         justify-content: none;
@@ -563,6 +580,23 @@
     //responsive a "ofertas" para dispositivos medianos
 
     .container-fluid{
+        .animation{
+            width: $ancho-w;
+            .div-container-anima{
+                width: $ancho-w;
+                height: auto;
+                .animate{
+                    width: 50%;
+                    height: auto;
+                    display: flex;
+                    align-items: center;
+                    .color-h2{
+                        margin-right: 5px;
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
         .media1{
             width: $ancho-w;
             justify-content: none;
