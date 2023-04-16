@@ -10,6 +10,42 @@
     background-color: $colorTerciario;
 }
 
+//ANIMACIONES 
+
+//animacion para TEXTOS
+@keyframes parrafos{
+    from {opacity: 0;}
+    to{opacity: 1}
+}
+
+p{
+    animation-name: parrafos;
+    animation-duration: 5s;
+}
+
+@keyframes animation-background{
+    0%{background-image: url(../img/headers/y8-PTBaP90a.png)}
+    25%{background-color: white;}
+    50%{background-color: white;}
+    75%{background-color: white;}
+    100%{background-image: url(../img/headers/WA-1\ \(1\).jpg)}
+}
+
+@keyframes animation-backgroun{
+    0%{background: linear-gradient(to left, wheat, white)}
+    100%{background: linear-gradient(to right,wheat, white)}
+}
+
+@keyframes conocenos{
+    0%{background-image: url(../img/main/da.webp)}
+    25%{background-color: white;animation-duration: 2s;}
+    50%{background-color: white;animation-duration: 1s;}
+    75%{background-color: white;}
+    100%{background-image: url(../img/main/favicon.webp)}
+}
+
+
+
 
 //HEADER acomodo con Sass
 header{

@@ -309,9 +309,7 @@
                 height: auto;
                 width: auto;
                 p{
-                    /* height: auto;
-                    width: auto; */
-                    color: $colorSecundario;
+                    color: $colorPrincipal;
                     &:hover{
                         @include coloreado ($colorSecundario,$colorPrincipal);
                     }
@@ -350,10 +348,11 @@
             background-color: $colorSecundario;
             
             .container-img-cono{
-                @include d-flex (row,center);
-                width: $ancho-w;
-                height: auto;
-                margin-bottom: 15px;
+                height: 30vh;
+                width: 100%;
+                @include animation (animation-background,3s,infinite,linear);
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
                
             }
             .conocenos-p{
@@ -647,7 +646,7 @@
                 .container-p{
                     @include d-flex (row,center);
                     p{
-                        color: $colorSecundario;
+                        color: $colorPrincipal;
                         height: auto;
                         &:hover{
                             @include coloreado ($colorSecundario,$colorPrincipal);

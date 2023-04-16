@@ -69,6 +69,14 @@
     color: $color;//variable local
 }
 
+//onceavo mixin
+@mixin animation ($name,$seg,$repeat,$direct){
+    animation-name: $name;
+    animation-duration: $seg;
+    animation-iteration-count: $repeat;
+    animation-timing-function: $direct;
+}
+
 
 
 //Extend

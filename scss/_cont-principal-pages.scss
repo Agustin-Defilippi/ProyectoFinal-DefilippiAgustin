@@ -178,7 +178,8 @@
         border: $bord-er;
         margin-bottom: 25px;
         display: flex;
-       
+        @include animation (animation-backgroun,7s,infinite,linear);
+        
         .producto-section2{
            @extend .producto-section2-;
            h2{
@@ -318,13 +319,16 @@
         grid-area: principal;
         @include d-flex (row,flex-end);
         overflow: hidden;
+        
         .d-flex-desarrollo{
+            @include animation (animation-backgroun,6s,infinite,linear);
             display: inline-block;
             width: 65%;
             height: auto;
             border: $bord-er;
             overflow: hidden;
             img{
+                
                 width:$ancho-w;
                 height: auto;
                 padding: 10px 10px;
@@ -345,18 +349,24 @@
                     &:hover{
                         margin: 0 15px;
                         color: $colorSecundario;
-                        background-color: $colorPrincipal;
                         border-radius: 10px;
+                        background-color: $colorPrincipal;
+                        transition: all 4s;
                     }
                 }
             }
         }
     }
     .carousell{
-        grid-area: movimiento;
-        @include d-flex (row,flex-start);
+        width: 100%;
+      /*   grid-area: movimiento;
+        @include d-flex (row,flex-start); */
         .container-carousell{
+            @include animation (conocenos,7s,infinite,linear);
+            background-size: cover;
+            background-repeat: no-repeat;
             width: 63.5%;
+            height: 98%;
             margin-left: 10px;
         }
     }
@@ -388,10 +398,10 @@
             .container-img-cono{
                 width: 40%;
                 height: 100%;
-                .produ-img{
-                    width: $ancho-w;
-                    height: 100%;
-                }
+                @include animation (animation-background,5s,infinite,linear);
+                background-size: cover;
+                background-repeat: no-repeat;
+               
             }
             .conocenos-p{
                 @include text (1.5em,1.6em,$colorPrincipal,center);

@@ -53,6 +53,63 @@
   background-color: wheat;
 }
 
+@keyframes parrafos {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+p {
+  animation-name: parrafos;
+  animation-duration: 5s;
+}
+
+@keyframes animation-background {
+  0% {
+    background-image: url(../img/headers/y8-PTBaP90a.png);
+  }
+  25% {
+    background-color: white;
+  }
+  50% {
+    background-color: white;
+  }
+  75% {
+    background-color: white;
+  }
+  100% {
+    background-image: url(../img/headers/WA-1\ \(1\).jpg);
+  }
+}
+@keyframes animation-backgroun {
+  0% {
+    background: linear-gradient(to left, wheat, white);
+  }
+  100% {
+    background: linear-gradient(to right, wheat, white);
+  }
+}
+@keyframes conocenos {
+  0% {
+    background-image: url(../img/main/da.webp);
+  }
+  25% {
+    background-color: white;
+    animation-duration: 2s;
+  }
+  50% {
+    background-color: white;
+    animation-duration: 1s;
+  }
+  75% {
+    background-color: white;
+  }
+  100% {
+    background-image: url(../img/main/favicon.webp);
+  }
+}
 header .container-flex-carousel {
   display: flex;
   flex-direction: row;
@@ -426,6 +483,10 @@ footer .container-wrap .css-text {
   border: solid 2px black;
   margin-bottom: 25px;
   display: flex;
+  animation-name: animation-backgroun;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 .container-section2 .agrupacion .producto-section2 h2 {
   background-color: black;
@@ -573,6 +634,10 @@ footer .container-wrap .css-text {
   overflow: hidden;
 }
 .grid-conocenos .desarrollo .d-flex-desarrollo {
+  animation-name: animation-backgroun;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
   display: inline-block;
   width: 65%;
   height: auto;
@@ -603,17 +668,24 @@ footer .container-wrap .css-text {
 .grid-conocenos .desarrollo .d-flex-desarrollo .container-p p:hover {
   margin: 0 15px;
   color: white;
-  background-color: black;
   border-radius: 10px;
+  background-color: black;
+  transition: all 4s;
 }
 .grid-conocenos .carousell {
-  grid-area: movimiento;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  width: 100%;
+  /*   grid-area: movimiento;
+    @include d-flex (row,flex-start); */
 }
 .grid-conocenos .carousell .container-carousell {
+  animation-name: conocenos;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 63.5%;
+  height: 98%;
   margin-left: 10px;
 }
 .grid-conocenos .multime {
@@ -658,10 +730,12 @@ footer .container-wrap .css-text {
 .grid-conocenos .buton .img-buton .container-img-cono {
   width: 40%;
   height: 100%;
-}
-.grid-conocenos .buton .img-buton .container-img-cono .produ-img {
-  width: 100%;
-  height: 100%;
+  animation-name: animation-background;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .grid-conocenos .buton .img-buton .conocenos-p {
   font-size: 1.5em;
@@ -1127,9 +1201,7 @@ footer .container-wrap .css-text {
     width: auto;
   }
   .grid-conocenos .desarrollo .d-flex-desarrollo .container-p p {
-    /* height: auto;
-    width: auto; */
-    color: white;
+    color: black;
     font-size: auto;
     line-height: auto;
   }
@@ -1176,12 +1248,14 @@ footer .container-wrap .css-text {
     background-color: white;
   }
   .grid-conocenos .buton .img-buton .container-img-cono {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    height: 30vh;
     width: 100%;
-    height: auto;
-    margin-bottom: 15px;
+    animation-name: animation-background;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
   }
   .grid-conocenos .buton .img-buton .conocenos-p {
     width: 100%;
@@ -1458,7 +1532,7 @@ footer .container-wrap .css-text {
     justify-content: center;
   }
   .grid-conocenos .desarrollo .d-flex-desarrollo .container-p p {
-    color: white;
+    color: black;
     height: auto;
   }
   .grid-conocenos .desarrollo .d-flex-desarrollo .container-p p:hover {
