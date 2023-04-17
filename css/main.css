@@ -68,7 +68,7 @@ p {
 
 @keyframes animation-background {
   0% {
-    background-image: url(../img/headers/y8-PTBaP90a.png);
+    background-image: url(../img/headers/logo-whatsapp.webp);
   }
   25% {
     background-color: white;
@@ -80,7 +80,7 @@ p {
     background-color: white;
   }
   100% {
-    background-image: url(../img/headers/WA-1\ \(1\).jpg);
+    background-image: url(../img/headers/telefono-whatsapp.webp);
   }
 }
 @keyframes animation-backgroun {
@@ -674,15 +674,13 @@ footer .container-wrap .css-text {
 }
 .grid-conocenos .carousell {
   width: 100%;
-  /*   grid-area: movimiento;
-    @include d-flex (row,flex-start); */
 }
 .grid-conocenos .carousell .container-carousell {
   animation-name: conocenos;
   animation-duration: 7s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 63.5%;
   height: 98%;
@@ -734,7 +732,7 @@ footer .container-wrap .css-text {
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 .grid-conocenos .buton .img-buton .conocenos-p {
@@ -1141,6 +1139,9 @@ footer .container-wrap .css-text {
   }
   .container-fluid .animation .div-container-anima .animate svg {
     display: none;
+  }
+  .container-fluid .animation .div-container-anima .animate .colorh-2 {
+    color: wheat;
   }
   .container-fluid .media1 {
     width: 100%;

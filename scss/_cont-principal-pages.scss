@@ -359,11 +359,10 @@
     }
     .carousell{
         width: 100%;
-      /*   grid-area: movimiento;
-        @include d-flex (row,flex-start); */
+      
         .container-carousell{
             @include animation (conocenos,7s,infinite,linear);
-            background-size: cover;
+            background-size: 100% 100%;
             background-repeat: no-repeat;
             width: 63.5%;
             height: 98%;
@@ -399,7 +398,7 @@
                 width: 40%;
                 height: 100%;
                 @include animation (animation-background,5s,infinite,linear);
-                background-size: cover;
+                background-size: 100% 100%;
                 background-repeat: no-repeat;
                
             }
