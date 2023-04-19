@@ -43,6 +43,13 @@
   align-items: center;
 }
 
+.animacion-agrupacion, .container-section2 .agrupacion .producto-section2 .d-logos .b-image-cloaca, .container-section2 .agrupacion .producto-section2 .d-logos .b-image-gas {
+  width: 30%;
+  height: 300px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
 * {
   font-family: "Oswald", sans-serif;
   font-weight: 500;
@@ -108,6 +115,74 @@ p {
   }
   100% {
     background-image: url(../img/main/favicon.webp);
+  }
+}
+@keyframes agrupacion-animate-agua {
+  0% {
+    background-image: url(../img/productos/logo-saladillo.webp);
+  }
+  25% {
+    background-image: url(../img/productos/aq-system.webp);
+  }
+  50% {
+    background-image: url(../img/productos/logo-saladillo.webp);
+  }
+  75% {
+    background-image: url(../img/productos/aq-system.webp);
+  }
+  100% {
+    background-image: url(../img/productos/logo-saladillo.webp);
+  }
+}
+@keyframes agrupacion-animate-gas {
+  0% {
+    background-image: url(../img/productos/grupo-dema.webp);
+  }
+  25% {
+    background-image: url(../img/productos/curso-fusiogas.webp);
+  }
+  50% {
+    background-image: url(../img/productos/grupo-dema.webp);
+  }
+  75% {
+    background-image: url(../img/productos/curso-fusiogas.webp);
+  }
+  100% {
+    background-image: url(../img/productos/grupo-dema.webp);
+  }
+}
+@keyframes agrupacion-animate-cloaca {
+  0% {
+    background-image: url(../img/productos/awaduct.webp);
+  }
+  25% {
+    background-image: url(../img/productos/tigre.webp);
+  }
+  50% {
+    background-image: url(../img/productos/awaduct.webp);
+  }
+  75% {
+    background-image: url(../img/productos/tigre.webp);
+  }
+  100% {
+    background-image: url(../img/productos/awaduct.webp);
+  }
+}
+@keyframes not-found-404 {
+  0% {
+    background-image: url(../img/error-404/danger-anonimus.webp);
+  }
+  25% {
+    background-image: url(../img/error-404/danger.webp);
+  }
+  50% {
+    background-image: url(../img/error-404/danger-anonimus.webp);
+  }
+  75% {
+    background-image: url(../img/error-404/danger.webp);
+  }
+  100% {
+    background-image: url(../img/error-404/danger-anonimus.webp);
   }
 }
 header .container-flex-carousel {
@@ -516,13 +591,27 @@ footer .container-wrap .css-text {
   flex-direction: row;
   justify-content: center;
 }
-.container-section2 .agrupacion .producto-section2 .d-logos a .t-img {
-  padding: 0 45px;
+.container-section2 .agrupacion .producto-section2 .d-logos .b-image-agua {
+  width: 30%;
+  height: 300px;
+  animation-name: agrupacion-animate-agua;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
-.container-section2 .agrupacion .producto-section2 .d-logos a .t-img2 {
-  width: 250px;
-  height: 250px;
-  margin: 0 45px;
+.container-section2 .agrupacion .producto-section2 .d-logos .b-image-gas {
+  animation-name: agrupacion-animate-gas;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.container-section2 .agrupacion .producto-section2 .d-logos .b-image-cloaca {
+  animation-name: agrupacion-animate-cloaca;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 @keyframes animation {
@@ -879,6 +968,83 @@ footer .container-wrap .css-text {
   width: 100%;
 }
 
+.not-found {
+  background-color: black;
+}
+.not-found .contenedor-fluid-error404 {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.not-found .contenedor-fluid-error404 main {
+  width: 100%;
+  height: 100%;
+  animation-name: not-found-404;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+}
+.not-found .contenedor-fluid-error404 main .contenedor-section-404 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 45%;
+}
+.not-found .contenedor-fluid-error404 main .contenedor-section-404 h1 {
+  background-color: black;
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 7px;
+  font-family: "Saira", sans-serif;
+  font-weight: 500;
+}
+.not-found .contenedor-fluid-error404 main .contenedor-section-404 h2 {
+  color: white;
+}
+.not-found .contenedor-fluid-error404 main .contenedor-section-404 p {
+  background-color: black;
+  color: wheat;
+  font-size: 1.4em;
+  line-height: 1.5em;
+  color: wheat;
+  text-align: center;
+  padding: 0 15px;
+  border-radius: 10px;
+}
+.not-found .contenedor-fluid-error404 main .contenedor-section-404 p:hover {
+  transform: scale(1.2);
+  transition: all 1.5s;
+  cursor: pointer;
+}
+.not-found .contenedor-fluid-error404 main .contenedor-section-404 .buton-404 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.not-found .contenedor-fluid-error404 main .contenedor-section-404 .buton-404 a {
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+}
+.not-found .contenedor-fluid-error404 main .contenedor-section-404 .buton-404 a .btn {
+  color: black;
+}
+.not-found .contenedor-fluid-error404 main .contenedor-section-404 .buton-404 a .btn:hover {
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  transform: scale(1.2);
+  transition: 1s;
+}
+
 .navegador {
   background-color: black;
   display: flex;
@@ -1115,13 +1281,14 @@ footer .container-wrap .css-text {
     width: 100%;
     border: none;
   }
-  .container-section2 .cont-section2 .agrupacion .producto-section2 .d-logos a .t-img {
-    width: 190px;
-    height: 150px;
+  .container-section2 .cont-section2 .agrupacion .producto-section2 .d-logos .b-image-agua {
+    width: 80%;
   }
-  .container-section2 .cont-section2 .agrupacion .producto-section2 .d-logos a .t-img2 {
-    width: 100px;
-    height: 100px;
+  .container-section2 .cont-section2 .agrupacion .producto-section2 .d-logos .b-image-gas {
+    width: 80%;
+  }
+  .container-section2 .cont-section2 .agrupacion .producto-section2 .d-logos .b-image-cloaca {
+    width: 80%;
   }
   .container-fluid .animation {
     width: 100%;

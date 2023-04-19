@@ -44,7 +44,35 @@ p{
     100%{background-image: url(../img/main/favicon.webp)}
 }
 
+@keyframes agrupacion-animate-agua{
+    0%{background-image: url(../img/productos/logo-saladillo.webp)}
+    25%{background-image: url(../img/productos/aq-system.webp)}
+    50%{background-image: url(../img/productos/logo-saladillo.webp)}
+    75%{background-image: url(../img/productos/aq-system.webp)}
+    100%{background-image: url(../img/productos/logo-saladillo.webp)}
+}
+@keyframes agrupacion-animate-gas{
+    0%{background-image: url(../img/productos/grupo-dema.webp)}
+    25%{background-image: url(../img/productos/curso-fusiogas.webp)}
+    50%{background-image: url(../img/productos/grupo-dema.webp)}
+    75%{background-image: url(../img/productos/curso-fusiogas.webp)}
+    100%{background-image: url(../img/productos/grupo-dema.webp)}
+}
+@keyframes agrupacion-animate-cloaca{
+    0%{background-image: url(../img/productos/awaduct.webp)}
+    25%{background-image: url(../img/productos/tigre.webp)}
+    50%{background-image: url(../img/productos/awaduct.webp)}
+    75%{background-image: url(../img/productos/tigre.webp)}
+    100%{background-image: url(../img/productos/awaduct.webp)}
+}
 
+@keyframes not-found-404{
+    0%{background-image: url(../img/error-404/danger-anonimus.webp)}
+    25%{background-image: url(../img/error-404/danger.webp)}
+    50%{background-image: url(../img/error-404/danger-anonimus.webp)}
+    75%{background-image: url(../img/error-404/danger.webp)}
+    100%{background-image: url(../img/error-404/danger-anonimus.webp)}
+}
 
 
 //HEADER acomodo con Sass
@@ -87,7 +115,7 @@ header{
 
 //h2
 h2{
-    font-family: 'Saira', sans-serif;
+    font-family: $fontSecundary;
     font-weight: $fontWsecundary;
 }
 

@@ -179,7 +179,7 @@
         margin-bottom: 25px;
         display: flex;
         @include animation (animation-backgroun,7s,infinite,linear);
-        
+
         .producto-section2{
            @extend .producto-section2-;
            h2{
@@ -204,16 +204,22 @@
            }
            .d-logos{
                 @include d-flex (row,center);
-                a{
-                    .t-img{
-                        padding: 0 45px ;
-                    }
-                    .t-img2{
-                        width: 250px;
-                        height: 250px;
-                        margin: 0 45px;
-                    }
+                .b-image-agua{
+                    width: 30%;
+                    height: 300px;
+                    @include animation (agrupacion-animate-agua,10s,infinite,linear);
+                    background-size: 100% 100%;
+                    background-repeat: no-repeat;
                 }
+                .b-image-gas{
+                    @extend .animacion-agrupacion;
+                    @include animation (agrupacion-animate-gas,10s,infinite,linear);
+                }
+                .b-image-cloaca{
+                    @extend .animacion-agrupacion;
+                    @include animation (agrupacion-animate-cloaca,10s,infinite,linear);
+                }
+                
            }
         }
     }
@@ -530,4 +536,67 @@
             width: $ancho-w;
         }
     }
+}
+
+//Comienza  Page de "error 404 not foud"
+.not-found{
+    background-color: black;
+    .contenedor-fluid-error404{
+        height: 100vh;
+        width: $ancho-w;
+        margin: 0;
+        @include d-flex (row,center); 
+        
+        main{
+            width: $ancho-w;
+            height: 100%;
+            @include animation (not-found-404,10s,infinite,linear);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            display: flex;
+            
+            .contenedor-section-404{
+                @include acomodo-cont (center,center);
+                width: 40%;
+                height: 45%;
+                h1{
+                    @include coloreado ($colorPrincipal,$colorSecundario);
+                    margin-bottom: 20px;
+                    text-align: center;
+                    border-radius: 7px;
+                    font-family: $fontSecundary;
+                    font-weight: $fontWprimary;
+                }
+                h2{
+                    color: $colorSecundario;
+                }
+                p{
+                    @include coloreado ($colorPrincipal,$colorTerciario);
+                    @include text (1.4em,1.5em,$colorTerciario,center);
+                    padding: 0 15px;
+                    border-radius: 10px;
+                    &:hover{
+                        transform: scale(1.2);
+                        transition:all 1.5s ;
+                        cursor: pointer;
+                    }
+                }
+                .buton-404{
+                    @include d-flex (row,center);
+                    a{
+                        @include coloreado (red,$colorSecundario);
+                        border-radius: 5px;
+                        .btn{
+                            color: $colorPrincipal;
+                            &:hover{
+                                @include containers-dos (none,5px,$colorSecundario);
+                                transform:scale(1.2);
+                                transition: 1s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }  
 }
