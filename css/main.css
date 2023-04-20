@@ -1493,6 +1493,42 @@ footer .container-wrap .css-text {
   .find-us .iframe-contactos {
     width: 90%;
   }
+  .not-found {
+    width: 100%;
+  }
+  .not-found .contenedor-fluid-error404 {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .not-found .contenedor-fluid-error404 main {
+    width: 100%;
+    height: 100%;
+  }
+  .not-found .contenedor-fluid-error404 main .contenedor-section-404 {
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+  }
+  .not-found .contenedor-fluid-error404 main .contenedor-section-404 h1 {
+    font-size: 1.5em;
+    width: 100%;
+  }
+  .not-found .contenedor-fluid-error404 main .contenedor-section-404 h2 {
+    width: 100%;
+    text-align: center;
+  }
+  .not-found .contenedor-fluid-error404 main .contenedor-section-404 p {
+    display: none;
+  }
+  .not-found .contenedor-fluid-error404 main .contenedor-section-404 .buton-404 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
   .flex-conteiner-multimedia {
     width: 100vw;
     height: 50vh;

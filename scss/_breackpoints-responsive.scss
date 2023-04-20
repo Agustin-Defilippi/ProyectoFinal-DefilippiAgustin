@@ -431,6 +431,46 @@
     }
 }
 
+//Aplicando responsive a page "error 404"
+.not-found{
+    width: 100%;
+   
+    .contenedor-fluid-error404{
+        height: 60vh;
+        width: 100%;
+        @include acomodo-cont (center,flex-start);
+     
+        main{
+            width: $ancho-w;
+            height: 100%;
+            .contenedor-section-404{
+                margin-top: 10px;
+                width: $ancho-w;
+                height: 100%;
+                h1{
+                    font-size: 1.5em;
+                    width: $ancho-w;
+                }
+                h2{
+                    width: $ancho-w;
+                    text-align: center;
+                }
+                p{
+                    display: none;
+                }
+                .buton-404{
+                    width: $ancho-w;
+                    @include d-flex (row,center);
+                }
+                
+               
+            }
+        }
+    }
+}
+
+
+
 // aplicando responsive a las seccion multimedia fuera del main  
     .flex-conteiner-multimedia{
         width: 100vw;
