@@ -231,9 +231,14 @@ footer{
             opacity: 1;
             visibility: visible;
         }
-        &:hover > .capa h3{
+        &:hover > .capa h2{
             display: inline-block;
             margin-top: 70px;
+            margin-bottom: 15px;
+        }
+        &:hover > .capa h3{
+            display: inline-block;
+            margin-top: 30px;
             margin-bottom: 15px;
         }
         &:hover > img{
@@ -256,6 +261,13 @@ footer{
             opacity: 0;
             visibility: hidden;
             text-align: center;
+            h2{
+                @include text (2em,2.2em,$colorPrincipal,center);
+                font-weight: $fontWsecundary;
+                font-family: 'Saira', sans-serif;
+                margin-bottom: 120px;
+                margin-top: 30px;
+            }
             h3{
                 @include text (2em,2.2em,$colorPrincipal,center);
                 font-weight: $fontWsecundary;

@@ -148,12 +148,10 @@
                         @include coloreado ($colorSecundario,$colorPrincipal);
                     }
                 }
-                .text-edit{
-                    .contenedor{
-                        figure{
-                            img{
-                                height: 350px;
-                            }
+                .contenedor{
+                    figure{
+                        img{
+                            height: 350px;
                         }
                     }
                 }
@@ -181,15 +179,15 @@
                         @include coloreado ($colorSecundario,$colorPrincipal);
                     }
                 }
-                .text-edit{
-                    .contenedor{
-                        figure{
-                            img{
-                                height: 350px;
-                            }
+                
+                .contenedor{
+                    figure{
+                        img{
+                            height: 350px;
                         }
                     }
                 }
+                
             }
         }
     }
@@ -591,10 +589,27 @@
         row-gap: 10vh;
         .incendio{
             .container-section-product{
+                .contenedor{
+                    figure{
+                        img{
+                            height: 450px;
+                        }
+                    }
+                }
                 p{
                     display: block;
                 }
-                
+            }
+        }
+        .cloaca{
+            .container-section-product{
+                .contenedor{
+                    figure{
+                        img{
+                            height: 450px;
+                        }
+                    }
+                }
             }
         }
     }
