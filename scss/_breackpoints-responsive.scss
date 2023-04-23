@@ -76,6 +76,24 @@
             }
         }
     }
+    .container-galeria{
+        width: $ancho-w;
+        height: 400px;
+        section{
+            width: $ancho-w;
+            height: auto;
+            border-radius: none;
+            img{
+                object-fit: cover;
+                &:hover{
+                    width: 285px;
+                }
+            }
+            .galeria-none{
+                display: none;
+            }
+        }
+    }
     
     //Responsive al grid-productos 
     .grid-productos{
@@ -325,7 +343,7 @@
         width: $ancho-w;
         @include d-flex (row,center);
         .container-video{
-            @include containers (95%,100%,2px,none,20px);
+            @include containers ($ancho-w,100%,2px,none,20px);
             .iframe-video{
                 width: $ancho-w;
                 height: 100%;
@@ -575,6 +593,14 @@
         padding: 0 2vw;
         .filtros{
             display: none;
+        }
+    }
+
+    //responsive a galeria de fotos de index para dispositivos medianos
+    .container-galeria{
+        width: $ancho-w;
+        section{
+            width: $ancho-w;
         }
     }
 

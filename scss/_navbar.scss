@@ -1,4 +1,4 @@
-//comienza acomodo de NAV con nesting/anidacion Sass
+//comienza acomodo de NAVEGADOR con nesting/anidacion Sass
 .navegador{
     background-color: $colorPrincipal;
     display: flex;
@@ -29,10 +29,14 @@
         border-radius: 5px;
     }
     .edit-button{
+        @include d-flex (row,center);
         background-color: $colorSecundario;
-        color: $colorPrincipal;
         border: $bord-er;
         border-radius: 5px;
+        width: 30px;
+        svg{
+            color: $colorPrincipal;
+        }
     }
     
 }

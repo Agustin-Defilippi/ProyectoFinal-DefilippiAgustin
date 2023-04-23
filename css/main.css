@@ -187,6 +187,7 @@ p {
 }
 header .container-flex-carousel {
   display: flex;
+  /* Variables locales */
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
@@ -206,12 +207,14 @@ header .w-65 {
 
 .cont-h11 {
   display: flex;
+  /* Variables locales */
   flex-direction: row;
   justify-content: center;
   width: 100%;
 }
 .cont-h11 .box-h11 {
   display: flex;
+  /* Variables locales */
   flex-direction: row;
   justify-content: center;
   width: 65%;
@@ -253,6 +256,7 @@ h2 {
 }
 .flex-conteiner-multimedia .w-section {
   display: flex;
+  /* Variables locales */
   flex-direction: row;
   justify-content: center;
   width: 100%;
@@ -261,10 +265,12 @@ h2 {
 .flex-conteiner-multimedia .w-section .w-65 {
   width: 65%;
   display: flex;
+  /* Variables locales */
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+  /* Variables locales */
   border: 0;
   border-radius: 20px;
   background-color: black;
@@ -272,17 +278,20 @@ h2 {
 .flex-conteiner-multimedia .w-section .w-65 .d-flex-1 {
   width: 32%;
   display: flex;
+  /* Variables locales */
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
 }
 .flex-conteiner-multimedia .w-section .w-65 .d-flex-1 .wrap-svg-1 svg {
+  /* Variables locales */
   width: 60px;
   height: 60px;
   margin: 0;
   border: 0;
   border-radius: 10px;
+  /* Variables locales */
   background-color: white;
   color: black;
   margin-left: 15px;
@@ -290,6 +299,7 @@ h2 {
 .flex-conteiner-multimedia .w-section .w-65 .d-flex-2 {
   width: 32%;
   display: flex;
+  /* Variables locales */
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
@@ -309,6 +319,7 @@ h2 {
 
 footer {
   display: flex;
+  /* Variables locales */
   flex-direction: row;
   justify-content: space-between;
   background-color: black;
@@ -414,6 +425,7 @@ footer .container-wrap .css-text {
   text-decoration: none;
 }
 .contenedor figure .capa .wsp a {
+  /* Variables locales */
   border: 2px solid black;
   border-radius: 8px;
   background-color: black;
@@ -423,6 +435,7 @@ footer .container-wrap .css-text {
   color: white;
 }
 .contenedor figure .capa .wsp button {
+  /* Variables locales */
   background-color: rgb(120, 224, 120);
   color: white;
   border-radius: 8px;
@@ -430,6 +443,7 @@ footer .container-wrap .css-text {
 
 .grid-index {
   display: grid;
+  /* Variables locales */
   grid-template-columns: repeat(6, 15vw);
   margin-bottom: 25px;
   gap: 30px;
@@ -443,6 +457,7 @@ footer .container-wrap .css-text {
   line-height: 2.8em;
   color: white;
   text-align: center;
+  /* Variables locales */
   border: 0px;
   border-radius: 10px;
   background-color: black;
@@ -468,16 +483,19 @@ footer .container-wrap .css-text {
 }
 .grid-index .filtros form {
   display: flex;
+  /* Variables locales */
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+  /* Variables locales */
   border: wheat solid 1px;
   border-radius: 20px;
   background-color: black;
   margin-top: 25vh;
 }
 .grid-index .filtros form .edit-conteiner-filtros {
+  /* Variables locales */
   border: white solid 2px;
   border-radius: 10px;
   background-color: wheat;
@@ -493,6 +511,7 @@ footer .container-wrap .css-text {
   list-style: none;
 }
 .grid-index .filtros ul li a {
+  /* Variables locales */
   font-size: 0.9em;
   line-height: 2em;
   text-decoration: none;
@@ -503,8 +522,41 @@ footer .container-wrap .css-text {
   background-color: black;
 }
 
+.container-galeria {
+  display: flex;
+  /* Variables locales */
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 30px;
+}
+.container-galeria section {
+  display: flex;
+  height: auto;
+  width: 65%;
+  /* Variables locales */
+  border: solid 2px black;
+  border-radius: 5px;
+  background-color: white;
+}
+.container-galeria section img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.9;
+  transition: 0.5s ease;
+}
+.container-galeria section img:hover {
+  cursor: all-scroll;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
 .grid-productos {
   display: grid;
+  /* Variables locales */
   grid-template-columns: 18vw 27vw 18vw;
   margin-bottom: 100px;
   gap: 10px;
@@ -564,6 +616,7 @@ footer .container-wrap .css-text {
 }
 .container-section2 .cont-section2 {
   display: flex;
+  /* Variables locales */
   flex-direction: row;
   justify-content: center;
   width: 100%;
@@ -573,18 +626,21 @@ footer .container-wrap .css-text {
   border: solid 2px black;
   margin-bottom: 25px;
   display: flex;
+  /* Variables locales */
   animation-name: animation-backgroun;
   animation-duration: 7s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
 .container-section2 .agrupacion .producto-section2 h2 {
+  /* Variables locales */
   background-color: black;
   color: white;
   margin-bottom: 30px;
 }
 .container-section2 .agrupacion .producto-section2 .h3 {
   display: flex;
+  /* Variables locales */
   flex-direction: row;
   justify-content: center;
   width: 100%;
@@ -603,12 +659,14 @@ footer .container-wrap .css-text {
 }
 .container-section2 .agrupacion .producto-section2 .d-logos {
   display: flex;
+  /* Variables locales */
   flex-direction: row;
   justify-content: center;
 }
 .container-section2 .agrupacion .producto-section2 .d-logos .b-image-agua {
   width: 30%;
   height: 300px;
+  /* Variables locales */
   animation-name: agrupacion-animate-agua;
   animation-duration: 10s;
   animation-iteration-count: infinite;
@@ -617,12 +675,14 @@ footer .container-wrap .css-text {
   background-repeat: no-repeat;
 }
 .container-section2 .agrupacion .producto-section2 .d-logos .b-image-gas {
+  /* Variables locales */
   animation-name: agrupacion-animate-gas;
   animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
 .container-section2 .agrupacion .producto-section2 .d-logos .b-image-cloaca {
+  /* Variables locales */
   animation-name: agrupacion-animate-cloaca;
   animation-duration: 10s;
   animation-iteration-count: infinite;
@@ -660,6 +720,7 @@ footer .container-wrap .css-text {
   width: 50%;
   height: 60px;
   display: flex;
+  /* Variables locales */
   justify-content: center;
   align-items: center;
   animation-name: animation;
@@ -679,17 +740,20 @@ footer .container-wrap .css-text {
   margin-right: 20px;
 }
 .container-fluid .border-text {
+  /* Variables locales */
   border: solid 5px black;
   border-radius: 0;
   background-color: wheat;
 }
 .container-fluid .border-sec {
+  /* Variables locales */
   border: solid 5px wheat;
   border-radius: 20px;
   background-color: black;
 }
 .container-fluid .w-65 {
   display: flex;
+  /* Variables locales */
   justify-content: space-between;
   align-items: center;
   width: 65%;
@@ -718,6 +782,7 @@ footer .container-wrap .css-text {
 
 .grid-conocenos {
   display: grid;
+  /* Variables locales */
   grid-template-columns: repeat(2, 1fr);
   margin-bottom: 60px;
   gap: 2px;
@@ -733,11 +798,13 @@ footer .container-wrap .css-text {
 .grid-conocenos .desarrollo {
   grid-area: principal;
   display: flex;
+  /* Variables locales */
   flex-direction: row;
   justify-content: flex-end;
   overflow: hidden;
 }
 .grid-conocenos .desarrollo .d-flex-desarrollo {
+  /* Variables locales */
   animation-name: animation-backgroun;
   animation-duration: 6s;
   animation-iteration-count: infinite;
@@ -780,6 +847,7 @@ footer .container-wrap .css-text {
   width: 100%;
 }
 .grid-conocenos .carousell .container-carousell {
+  /* Variables locales */
   animation-name: conocenos;
   animation-duration: 7s;
   animation-iteration-count: infinite;
@@ -793,11 +861,13 @@ footer .container-wrap .css-text {
 .grid-conocenos .multime {
   grid-area: video;
   display: flex;
+  /* Variables locales */
   flex-direction: row;
   justify-content: flex-start;
 }
 .grid-conocenos .multime .container-video {
   display: flex;
+  /* Variables locales */
   justify-content: center;
   align-items: stretch;
   width: 63.5%;
@@ -807,6 +877,7 @@ footer .container-wrap .css-text {
 }
 .grid-conocenos .multime .container-video .iframe-video {
   display: flex;
+  /* Variables locales */
   flex-direction: row;
   justify-content: center;
   width: 100%;
@@ -815,6 +886,7 @@ footer .container-wrap .css-text {
 .grid-conocenos .buton {
   grid-area: boton;
   display: flex;
+  /* Variables locales */
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
@@ -823,6 +895,7 @@ footer .container-wrap .css-text {
 }
 .grid-conocenos .buton .img-buton {
   display: flex;
+  /* Variables locales */
   justify-content: center;
   align-items: center;
   height: 250px;
@@ -832,6 +905,7 @@ footer .container-wrap .css-text {
 .grid-conocenos .buton .img-buton .container-img-cono {
   width: 40%;
   height: 100%;
+  /* Variables locales */
   animation-name: animation-background;
   animation-duration: 5s;
   animation-iteration-count: infinite;
@@ -858,6 +932,7 @@ footer .container-wrap .css-text {
 }
 .grid-conocenos .buton .wsp .cont-a-wsp {
   display: flex;
+  /* Variables locales */
   flex-direction: row;
   justify-content: center;
   width: 40%;
@@ -872,10 +947,12 @@ footer .container-wrap .css-text {
   text-decoration: none;
 }
 .grid-conocenos .buton .wsp .cont-a-wsp a:hover {
+  /* Variables locales */
   background-color: white;
   color: black;
 }
 .grid-conocenos .buton .wsp .cont-a-wsp a button {
+  /* Variables locales */
   background-color: rgb(120, 224, 120);
   color: white;
   border-radius: 8px;
@@ -883,6 +960,7 @@ footer .container-wrap .css-text {
 
 .section-container-contactanos {
   display: flex;
+  /* Variables locales */
   flex-direction: row;
   justify-content: center;
   width: 100%;
@@ -890,6 +968,7 @@ footer .container-wrap .css-text {
 }
 .section-container-contactanos .disposicion-contenidos {
   display: flex;
+  /* Variables locales */
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
@@ -919,6 +998,7 @@ footer .container-wrap .css-text {
   margin: 25px;
 }
 .section-container-contactanos .disposicion-contenidos .conteiner-formularios .b-g form .border-form {
+  /* Variables locales */
   border: solid wheat 2px;
   border-radius: 20px;
   background-color: black;
@@ -949,10 +1029,12 @@ footer .container-wrap .css-text {
 
 .d-h2 {
   display: flex;
+  /* Variables locales */
   flex-direction: row;
   justify-content: center;
 }
 .d-h2 .indicacion-iframe {
+  /* Variables locales */
   background-color: black;
   color: wheat;
   text-align: center;
@@ -963,6 +1045,7 @@ footer .container-wrap .css-text {
 
 .find-us {
   display: flex;
+  /* Variables locales */
   flex-direction: row;
   justify-content: center;
   width: 100%;
@@ -971,6 +1054,7 @@ footer .container-wrap .css-text {
 }
 .find-us .iframe-contactos {
   display: flex;
+  /* Variables locales */
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
@@ -991,12 +1075,14 @@ footer .container-wrap .css-text {
   width: 100%;
   margin: 0;
   display: flex;
+  /* Variables locales */
   flex-direction: row;
   justify-content: center;
 }
 .not-found .contenedor-fluid-error404 main {
   width: 100%;
   height: 100%;
+  /* Variables locales */
   animation-name: not-found-404;
   animation-duration: 10s;
   animation-iteration-count: infinite;
@@ -1007,12 +1093,14 @@ footer .container-wrap .css-text {
 }
 .not-found .contenedor-fluid-error404 main .contenedor-section-404 {
   display: flex;
+  /* Variables locales */
   justify-content: center;
   align-items: center;
   width: 40%;
   height: 45%;
 }
 .not-found .contenedor-fluid-error404 main .contenedor-section-404 h1 {
+  /* Variables locales */
   background-color: black;
   color: white;
   margin-bottom: 20px;
@@ -1025,6 +1113,7 @@ footer .container-wrap .css-text {
   color: white;
 }
 .not-found .contenedor-fluid-error404 main .contenedor-section-404 p {
+  /* Variables locales */
   background-color: black;
   color: wheat;
   font-size: 1.4em;
@@ -1041,10 +1130,12 @@ footer .container-wrap .css-text {
 }
 .not-found .contenedor-fluid-error404 main .contenedor-section-404 .buton-404 {
   display: flex;
+  /* Variables locales */
   flex-direction: row;
   justify-content: center;
 }
 .not-found .contenedor-fluid-error404 main .contenedor-section-404 .buton-404 a {
+  /* Variables locales */
   background-color: red;
   color: white;
   border-radius: 5px;
@@ -1053,6 +1144,7 @@ footer .container-wrap .css-text {
   color: black;
 }
 .not-found .contenedor-fluid-error404 main .contenedor-section-404 .buton-404 a .btn:hover {
+  /* Variables locales */
   border: none;
   border-radius: 5px;
   background-color: white;
@@ -1073,6 +1165,7 @@ footer .container-wrap .css-text {
 }
 .navegador ul {
   display: flex;
+  /* Variables locales */
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
@@ -1092,10 +1185,17 @@ footer .container-wrap .css-text {
   border-radius: 5px;
 }
 .navegador .edit-button {
+  display: flex;
+  /* Variables locales */
+  flex-direction: row;
+  justify-content: center;
   background-color: white;
-  color: black;
   border: solid 2px black;
   border-radius: 5px;
+  width: 30px;
+}
+.navegador .edit-button svg {
+  color: black;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -1114,10 +1214,12 @@ footer .container-wrap .css-text {
   .cont-h11 .box-h11 {
     width: 100%;
     height: 200px;
+    /* Variables locales */
     border: none;
     border-radius: 10px;
     background-color: black;
     display: flex;
+    /* Variables locales */
     justify-content: center;
     align-items: center;
   }
@@ -1130,6 +1232,7 @@ footer .container-wrap .css-text {
   }
   .grid-index {
     display: grid;
+    /* Variables locales */
     grid-template-columns: 1fr;
     margin-bottom: 10px;
     gap: 0;
@@ -1145,6 +1248,7 @@ footer .container-wrap .css-text {
     display: none;
   }
   .grid-index .presentacion {
+    /* Variables locales */
     font-size: 1.6em;
     line-height: 2.5em;
     height: auto;
@@ -1173,8 +1277,27 @@ footer .container-wrap .css-text {
   .grid-index .instalaciones img {
     width: 100vw;
   }
+  .container-galeria {
+    width: 100%;
+    height: 400px;
+  }
+  .container-galeria section {
+    width: 100%;
+    height: auto;
+    border-radius: none;
+  }
+  .container-galeria section img {
+    object-fit: cover;
+  }
+  .container-galeria section img:hover {
+    width: 285px;
+  }
+  .container-galeria section .galeria-none {
+    display: none;
+  }
   .grid-productos {
     display: grid;
+    /* Variables locales */
     grid-template-columns: 1fr;
     margin-bottom: 10px;
     gap: 15vh;
@@ -1190,6 +1313,7 @@ footer .container-wrap .css-text {
     border: none;
   }
   .grid-productos .agua .container-section-product {
+    /* Variables locales */
     border: solid 2px black;
     border-radius: 10px;
     background-color: black;
@@ -1205,6 +1329,7 @@ footer .container-wrap .css-text {
     color: white;
   }
   .grid-productos .agua .container-section-product p:hover {
+    /* Variables locales */
     background-color: white;
     color: black;
   }
@@ -1213,6 +1338,7 @@ footer .container-wrap .css-text {
     border: none;
   }
   .grid-productos .gas .container-section-product {
+    /* Variables locales */
     border: solid 2px black;
     border-radius: 10px;
     background-color: black;
@@ -1226,6 +1352,7 @@ footer .container-wrap .css-text {
     color: white;
   }
   .grid-productos .gas .container-section-product p:hover {
+    /* Variables locales */
     background-color: white;
     color: black;
   }
@@ -1235,6 +1362,7 @@ footer .container-wrap .css-text {
     height: 100%;
   }
   .grid-productos .cloaca .container-section-product {
+    /* Variables locales */
     border: solid 2px black;
     border-radius: 10px;
     background-color: black;
@@ -1250,6 +1378,7 @@ footer .container-wrap .css-text {
     color: white;
   }
   .grid-productos .cloaca .container-section-product p:hover {
+    /* Variables locales */
     background-color: white;
     color: black;
   }
@@ -1262,6 +1391,7 @@ footer .container-wrap .css-text {
     height: 100%;
   }
   .grid-productos .incendio .container-section-product {
+    /* Variables locales */
     border: solid 2px black;
     border-radius: 10px;
     background-color: black;
@@ -1279,6 +1409,7 @@ footer .container-wrap .css-text {
     color: white;
   }
   .grid-productos .incendio .container-section-product p:hover {
+    /* Variables locales */
     background-color: white;
     color: black;
   }
@@ -1342,6 +1473,7 @@ footer .container-wrap .css-text {
     width: 80%;
     height: 100%;
     display: flex;
+    /* Variables locales */
     flex-direction: column;
     justify-content: center;
   }
@@ -1363,6 +1495,7 @@ footer .container-wrap .css-text {
   }
   .grid-conocenos .desarrollo {
     display: flex;
+    /* Variables locales */
     flex-direction: row;
     justify-content: center;
     width: 100%;
@@ -1385,10 +1518,12 @@ footer .container-wrap .css-text {
   }
   .grid-conocenos .desarrollo .d-flex-desarrollo .container-p p {
     color: black;
+    /* Variables locales */
     font-size: auto;
     line-height: auto;
   }
   .grid-conocenos .desarrollo .d-flex-desarrollo .container-p p:hover {
+    /* Variables locales */
     background-color: white;
     color: black;
   }
@@ -1398,11 +1533,13 @@ footer .container-wrap .css-text {
   .grid-conocenos .multime {
     width: 100%;
     display: flex;
+    /* Variables locales */
     flex-direction: row;
     justify-content: center;
   }
   .grid-conocenos .multime .container-video {
-    width: 95%;
+    /* Variables locales */
+    width: 100%;
     height: 100%;
     margin: 2px;
     border: none;
@@ -1415,6 +1552,7 @@ footer .container-wrap .css-text {
   }
   .grid-conocenos .buton {
     display: flex;
+    /* Variables locales */
     justify-content: center;
     align-items: flex-start;
     border: solid 2px black;
@@ -1433,6 +1571,7 @@ footer .container-wrap .css-text {
   .grid-conocenos .buton .img-buton .container-img-cono {
     height: 30vh;
     width: 100%;
+    /* Variables locales */
     animation-name: animation-background;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -1443,6 +1582,7 @@ footer .container-wrap .css-text {
   .grid-conocenos .buton .img-buton .conocenos-p {
     width: 100%;
     height: auto;
+    /* Variables locales */
     font-size: 1em;
     line-height: 1.8em;
   }
@@ -1450,6 +1590,7 @@ footer .container-wrap .css-text {
     width: 100%;
     height: auto;
     display: flex;
+    /* Variables locales */
     flex-direction: row;
     justify-content: center;
   }
@@ -1473,6 +1614,7 @@ footer .container-wrap .css-text {
   }
   .section-container-contactanos .disposicion-contenidos .conteiner-formularios {
     display: flex;
+    /* Variables locales */
     flex-direction: row;
     justify-content: center;
     width: 90%;
@@ -1515,6 +1657,7 @@ footer .container-wrap .css-text {
     height: 60vh;
     width: 100%;
     display: flex;
+    /* Variables locales */
     justify-content: center;
     align-items: flex-start;
   }
@@ -1541,6 +1684,7 @@ footer .container-wrap .css-text {
   .not-found .contenedor-fluid-error404 main .contenedor-section-404 .buton-404 {
     width: 100%;
     display: flex;
+    /* Variables locales */
     flex-direction: row;
     justify-content: center;
   }
@@ -1561,18 +1705,21 @@ footer .container-wrap .css-text {
   .flex-conteiner-multimedia .w-section .w-65 .d-flex-1 {
     width: 100%;
     display: flex;
+    /* Variables locales */
     flex-direction: row;
     justify-content: center;
   }
   .flex-conteiner-multimedia .w-section .w-65 .d-flex-1 .wrap-svg-1 {
     width: 100vw;
     display: flex;
+    /* Variables locales */
     flex-direction: row;
     justify-content: center;
     margin: 10px 10px;
   }
   .flex-conteiner-multimedia .w-section .w-65 .d-flex-1 .wrap-svg-2 {
     display: flex;
+    /* Variables locales */
     flex-direction: row;
     justify-content: center;
     width: 100vw;
@@ -1583,6 +1730,7 @@ footer .container-wrap .css-text {
   }
   .flex-conteiner-multimedia .w-section .w-65 .flex-w {
     display: flex;
+    /* Variables locales */
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -1596,6 +1744,7 @@ footer .container-wrap .css-text {
   .flex-conteiner-multimedia .w-section .w-65 .d-flex-2 .flex-wrap-2 {
     width: 100vw;
     display: flex;
+    /* Variables locales */
     flex-direction: row;
     justify-content: center;
     margin-bottom: 20px;
@@ -1613,11 +1762,13 @@ footer .container-wrap .css-text {
   footer .container-wrap {
     width: 100%;
     display: flex;
+    /* Variables locales */
     flex-direction: row;
     justify-content: center;
   }
   footer .container-wrap .css-text {
     display: flex;
+    /* Variables locales */
     flex-direction: row;
     justify-content: center;
     text-align: center;
@@ -1640,6 +1791,7 @@ footer .container-wrap .css-text {
   }
   .grid-index {
     display: grid;
+    /* Variables locales */
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 30px;
     gap: 15px;
@@ -1653,8 +1805,15 @@ footer .container-wrap .css-text {
   .grid-index .filtros {
     display: none;
   }
+  .container-galeria {
+    width: 100%;
+  }
+  .container-galeria section {
+    width: 100%;
+  }
   .grid-productos {
     display: grid;
+    /* Variables locales */
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 30px;
     gap: 15px;
@@ -1721,6 +1880,7 @@ footer .container-wrap .css-text {
   }
   .container-fluid .row .col-md-6 .card {
     display: flex;
+    /* Variables locales */
     flex-direction: column;
     justify-content: center;
     height: 600px;
@@ -1728,6 +1888,7 @@ footer .container-wrap .css-text {
   }
   .grid-conocenos {
     display: grid;
+    /* Variables locales */
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 35px;
     gap: 15px;
@@ -1753,6 +1914,7 @@ footer .container-wrap .css-text {
   }
   .grid-conocenos .desarrollo .d-flex-desarrollo .container-p {
     display: flex;
+    /* Variables locales */
     flex-direction: row;
     justify-content: center;
   }
@@ -1761,6 +1923,7 @@ footer .container-wrap .css-text {
     height: auto;
   }
   .grid-conocenos .desarrollo .d-flex-desarrollo .container-p p:hover {
+    /* Variables locales */
     background-color: white;
     color: black;
     width: auto;
@@ -1785,6 +1948,7 @@ footer .container-wrap .css-text {
   }
   .grid-conocenos .buton {
     display: flex;
+    /* Variables locales */
     border: solid 2px black;
     border-radius: none;
     background-color: black;
@@ -1800,6 +1964,7 @@ footer .container-wrap .css-text {
   }
   .grid-conocenos .buton .img-buton .conocenos-p {
     display: flex;
+    /* Variables locales */
     justify-content: center;
     align-items: center;
     padding: 0 20px;
@@ -1810,6 +1975,7 @@ footer .container-wrap .css-text {
   }
   .grid-conocenos .buton .wsp {
     display: flex;
+    /* Variables locales */
     flex-direction: row;
     justify-content: flex-start;
     width: 100%;
@@ -1838,6 +2004,7 @@ footer .container-wrap .css-text {
   }
   .section-container-contactanos .disposicion-contenidos .conteiner-formularios {
     display: flex;
+    /* Variables locales */
     flex-direction: row;
     justify-content: center;
     width: 100%;

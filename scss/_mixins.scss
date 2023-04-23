@@ -3,22 +3,25 @@
 //primer mixin
 @mixin flex ($direct,$wrap,$justy,$align){
     display: flex;
-    flex-direction: $direct;//variable local
-    flex-wrap: $wrap;//variable local
-    justify-content: $justy;//variable local
-    align-items: $align;//variable local                                                            
+    /* Variables locales */
+    flex-direction: $direct;
+    flex-wrap: $wrap;
+    justify-content: $justy;
+    align-items: $align;                                                         
 }
 
 //segundo mixin
 @mixin d-flex ($direct,$justy){
     display: flex;
-    flex-direction: $direct;//variable local
-    justify-content: $justy;//variable local
+    /* Variables locales */
+    flex-direction: $direct;
+    justify-content: $justy;
 }
 
-//tercer mixin
+
 @mixin acomodo-cont ($justy,$aling){
     display: flex;
+    /* Variables locales */
     justify-content: $justy;
     align-items: $aling;
 }
@@ -34,21 +37,24 @@
 
 //quinto mixin
 @mixin text2($tamano,$interline){
+    /* Variables locales */
     font-size: $tamano;
     line-height: $interline;
 }
 
 //sexto mixin
 @mixin containers ($width,$alto,$margin,$border,$circulo){
-    width: $width;//variable local
-    height: $alto;//variable local
-    margin: $margin;//variable local
-    border: $border;//variable local
-    border-radius: $circulo;//variable local
+    /* Variables locales */
+    width: $width;
+    height: $alto;
+    margin: $margin;
+    border: $border;
+    border-radius: $circulo;
 }
 
 //octavo mixin
 @mixin containers-dos ($border,$circulo,$bg-color){
+    /* Variables locales */
     border: $border;
     border-radius: $circulo;
     background-color: $bg-color;
@@ -57,20 +63,23 @@
 //noveno mixin
 @mixin grid ($margin,$gt-c,$gap,$width){
     display: grid;
-    grid-template-columns: $gt-c;//variable local
-    margin-bottom: $margin;//variable local
-    gap: $gap;//variable local
-    width: $width;//variable local
+    /* Variables locales */
+    grid-template-columns: $gt-c;
+    margin-bottom: $margin;
+    gap: $gap;
+    width: $width;
 }
 
 //decimo mixin
 @mixin coloreado ($bg-c,$color){
-    background-color: $bg-c;//variable local
-    color: $color;//variable local
+    /* Variables locales */
+    background-color: $bg-c;
+    color: $color;
 }
 
 //onceavo mixin
 @mixin animation ($name,$seg,$repeat,$direct){
+    /* Variables locales */
     animation-name: $name;
     animation-duration: $seg;
     animation-iteration-count: $repeat;
