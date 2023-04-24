@@ -306,25 +306,29 @@
         width: 65%;
         background-color:$colorPrincipal;
         border-radius: 20px;
-        .card{
-            width: 500px;
-            height: 58vh;
-            display: flex;
-            border: solid 2px wheat;
-            margin: 10px;
-            .width{
-                height: 50vh;
-                width: 100%;
-            }
-            .bord-img{
-                border-bottom: $bord-er;
-            }
-            &:hover{
-                transform: scale(1.1);
-                transition: all 0.8s;
-                cursor: pointer;
+        .col-sm-12{
+           
+            .card{
+                width: 500px;
+                height: 600px;
+                display: flex;
+                border: solid 2px wheat;
+                margin: 10px;
+                img{
+                    width: auto;
+                    height: auto;
+                }
+                .bord-img{
+                    border-bottom: $bord-er;
+                }
+                &:hover{
+                    transform: scale(1.1);
+                    transition: all 0.8s;
+                    cursor: pointer;
+                }
             }
         }
+        
     }
 
 }
