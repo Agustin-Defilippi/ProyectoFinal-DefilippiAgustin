@@ -304,19 +304,21 @@
     .w-65{
         @include acomodo-cont (space-between,center);
         width: 65%;
+        height: 100%;
         background-color:$colorPrincipal;
         border-radius: 20px;
         .col-sm-12{
-           
+           height: 100%;
             .card{
-                width: 500px;
-                height: 550px;
+                width: 100%;
+                height: 510px;
                 display: flex;
                 border: solid 2px wheat;
                 margin: 10px;
                 img{
                     width: auto;
                     height: auto;
+                    object-fit: cover;
                 }
                 .bord-img{
                     border-bottom: $bord-er;
@@ -372,12 +374,14 @@
                 display: flex;
                 justify-content: center;
                 height: auto;
+                width: auto;
                 
                 p{  
-                    @include text (1em,2em,$colorPrincipal,center);
+                    @include text (1.1em,1.5em,$colorPrincipal,center);
                     padding: 0 15px;
                     overflow: hidden;
-                    height: 10%;
+                    width: auto;
+                    height: auto;
                     
                     &:hover{
                         margin: 0 15px;
@@ -544,7 +548,7 @@
     .indicacion-iframe{
         @include coloreado ($colorPrincipal,$colorTerciario);
         text-align: center;
-        height: 5vh;
+        height: auto;
         margin-top: 40px;
         width: 65%;
     }
